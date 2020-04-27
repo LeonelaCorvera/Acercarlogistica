@@ -1,0 +1,1400 @@
+2019-05-13 03:32:01
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:44:51
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:45:40
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:45:53
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:47:00
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:47:14
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:48:52
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:52:25
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:53:55
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:54:44
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:55:04
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:55:53
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:57:08
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:58:00
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:58:07
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:58:39
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 03:59:23
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:00:12
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:01:57
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:02:17
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:02:39
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:03:56
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:04:40
+SELECT * FROM acercarlogistca.servicio;
+2019-05-20 04:05:40
+SELECT * FROM acercarlogistca.servicio;
+2019-05-21 03:28:26
+SELECT * FROM acercarlogistca.servicio;
+2019-05-21 03:36:43
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:47:26
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:49:13
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:51:46
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:52:40
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:53:52
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:54:10
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:57:41
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:58:06
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:58:23
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 00:58:41
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:00:02
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:01:21
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:01:42
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:01:45
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:02:02
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:02:14
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:02:25
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:02:48
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:08:23
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:09:30
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:10:08
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 01:56:10
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:02:58
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:03:12
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:03:15
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:06:53
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:10:41
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:10:42
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('');
+2019-05-23 02:11:34
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('');
+2019-05-23 02:17:12
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('');
+2019-05-23 02:17:18
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('moto');
+2019-05-23 02:18:47
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:18:49
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('moto');
+2019-05-23 02:18:49
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:19:42
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:19:48
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('leo');
+2019-05-23 02:19:48
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:20:08
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:20:12
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('yo');
+2019-05-23 02:20:56
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('yo');
+2019-05-23 02:20:56
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:36:45
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:37:22
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:54:47
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 02:54:50
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 02:55:19
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 02:55:29
+INSERT INTO acercarlogistca.servicio(descripcion)VALUES('lista demo');
+2019-05-23 02:55:29
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 03:03:47
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:03:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:03:56
+INSERT INTO acercarlogistca.listadeprecios(descripcion)VALUES('lista2');
+2019-05-23 03:03:56
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:08:45
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:24:44
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:25:29
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:26:52
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:26:54
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:27:34
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:27:41
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:27:48
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:29:22
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:29:27
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:29:39
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:29:40
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:31:00
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:31:02
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:32:15
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:35:09
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:35:38
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:36:12
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:36:23
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:45:36
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:46:19
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:46:20
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:47:25
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:47:29
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:47:31
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:48:10
+SELECT * FROM acercarlogistca.chofer;
+2019-05-23 03:49:02
+SELECT * FROM acercarlogistca.chofer;
+2019-05-23 03:49:20
+SELECT * FROM acercarlogistca.chofer;
+2019-05-23 03:49:30
+SELECT * FROM acercarlogistca.servicio;
+2019-05-23 03:49:34
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:49:38
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:50:37
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:50:55
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:55:12
+SELECT * FROM acercarlogistca.listadeprecios;
+2019-05-23 03:55:46
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 03:56:31
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 04:03:48
+SELECT * FROM acercarlogistca.vehiculo;
+2019-05-23 04:04:22
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:04:46
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:07:48
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:09:22
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:11:00
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:13:12
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:18:09
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:19:36
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:26:13
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:26:34
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:34:04
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:38:01
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:40:02
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:40:25
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:41:40
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:44:58
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:45:29
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:45:50
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:49:44
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:50:28
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:52:40
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 04:53:10
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 05:08:36
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 05:34:54
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 05:43:18
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 05:45:47
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 05:59:21
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:02:53
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:02:57
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:03:13
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:04:23
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:04:25
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:29
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:34
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:36
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:37
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:38
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:39
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:41
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:42
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:43
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:44
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:45
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:46
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:04:48
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:06:50
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:06:52
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:07:08
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:07:16
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 06:08:15
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 06:09:47
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 15:52:21
+SELECT * FROM acercarlogistca.cllienteempresa;
+2019-05-23 15:52:27
+SELECT * FROM acercarlogistca.cliente;
+2019-05-23 15:52:39
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-16 20:28:14
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-16 20:28:32
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-16 20:28:35
+SELECT * FROM acercarlogistca.chofer;
+2020-04-16 20:28:47
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-16 20:28:50
+SELECT * FROM acercarlogistca.cliente;
+2020-04-16 20:40:43
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 05:57:58
+SELECT * FROM acercarlogistca.servicio;
+2020-04-17 05:59:03
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 06:01:27
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 06:01:36
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 06:01:47
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 06:07:17
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 06:52:36
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 06:54:09
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 06:59:22
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:01:30
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:01:51
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:01:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:01:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:01:53
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:05:12
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:05:14
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:05:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:06:55
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:07:14
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:07:27
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:07:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:08:30
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:08:32
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:08:33
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:08:33
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:08:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:09:21
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:10:28
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:10:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:11:14
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 07:11:58
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:12:29
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:12:37
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:13:07
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:13:13
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:13:33
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:13:57
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:14:16
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:15:03
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:15:43
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:16:03
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 07:16:58
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:22:24
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:22:26
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:22:56
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:23:09
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:25:27
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:25:29
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:47
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:49
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:50
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:51
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:55
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:56
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:57
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:58
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:28:59
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:29:01
+SELECT * FROM acercarlogistca.servicio;
+2020-04-17 07:29:05
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:43:02
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:43:42
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:52:50
+SELECT * FROM acercarlogistca.servicio;
+2020-04-17 07:56:20
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 07:57:00
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:01:50
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:02:14
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:02:24
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:02:32
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:03:20
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:03:22
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:03:22
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:03:55
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:04:29
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:04:32
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:04:36
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 08:04:38
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:35:56
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 08:35:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-17 22:33:58
+SELECT * FROM acercarlogistca.servicio;
+2020-04-17 22:34:06
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-17 22:34:22
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 22:34:29
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:06:10
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:06:40
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 23:08:03
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 23:12:48
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:12:52
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 23:12:55
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:15:09
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-17 23:15:17
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:16:30
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:16:47
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-17 23:16:50
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:34:17
+SELECT * FROM acercarlogistca.chofer;
+2020-04-17 23:35:52
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 00:23:14
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 00:24:41
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 00:40:31
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 01:23:42
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 01:24:41
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 01:25:03
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 01:34:42
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-18 02:15:34
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 02:16:56
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 02:19:17
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 02:20:05
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 02:21:24
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 02:22:50
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 02:22:59
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 02:23:08
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 02:23:16
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-18 07:18:34
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:18:51
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:20:27
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:49:08
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:55:39
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:57:02
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 07:58:34
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:00:46
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:01:25
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:01:27
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:01:29
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:01:33
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:01:48
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:03:12
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:08:33
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:10:26
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:16:34
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:19:33
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:21:19
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:22:06
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:23:46
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:24:11
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:25:04
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:26:50
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:27:53
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:28:01
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:32:43
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:32:49
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:32:54
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:33:16
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:35:47
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:35:56
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:36:46
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:36:48
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:37:04
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:37:28
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:37:37
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:38:27
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:38:37
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:38:53
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:38:58
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:39:03
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:39:12
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:39:37
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:39:47
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:40:48
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:41:39
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:41:45
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:42:10
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:42:25
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:42:29
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:42:34
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:43:07
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:43:11
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:43:20
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:43:24
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:43:58
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:44:04
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:44:08
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:46:44
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:47:30
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:48:22
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:49:46
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:50:22
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:50:37
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:50:56
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:50:57
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:51:27
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:52:02
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 08:52:38
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-18 08:53:10
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-18 08:53:18
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-18 08:53:43
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 08:54:16
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 08:54:25
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 08:54:28
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 08:54:33
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:07:57
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:09:25
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:10:29
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:10:36
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:11:56
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:12:19
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:13:04
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:14:11
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:26:53
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:31:11
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:31:48
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:32:00
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:36:23
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:36:32
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:36:45
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:38:12
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:38:58
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-18 09:39:01
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:43:41
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:44:32
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:45:49
+SELECT * FROM acercarlogistca.servicio;
+2020-04-18 09:46:01
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:47:00
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:47:04
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:48:21
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:48:36
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:49:29
+SELECT * FROM acercarlogistca.chofer;
+2020-04-18 09:49:42
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-18 09:50:08
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-20 03:53:37
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-04-20 03:57:49
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 03:58:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 03:59:48
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:26:33
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:36:01
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:37:52
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:39:13
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:39:13
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:44:35
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:44:35
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:45:07
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:45:07
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:46:25
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:46:25
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:46:40
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:46:40
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:47:09
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:47:09
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:47:38
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:47:38
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:48:51
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:48:51
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:50:15
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:52:50
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:52:50
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:53:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 04:53:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:00:22
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:00:22
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:00:55
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:00:55
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:02:48
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:02:48
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:03:38
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:03:38
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:03:59
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:00
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:14
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:14
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:36
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:36
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:53
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:04:53
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:05:44
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:05:44
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:06:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:06:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:08:44
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:08:44
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:09:57
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:09:57
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:12:13
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:12:13
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:28:21
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:28:21
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:10
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:10
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:28
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:28
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:45
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:29:45
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:30:41
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:30:41
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:30:57
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:30:57
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:31:12
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:31:12
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:31:28
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:31:28
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:32:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:32:23
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:32:39
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:32:39
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:33:32
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:33:32
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:33:55
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:33:55
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:34:36
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:34:36
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:34:53
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:34:53
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:35:29
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:35:29
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:35:39
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:35:39
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:36:02
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:36:02
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:36:54
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:36:54
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:37:06
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:37:06
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:38:47
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:38:47
+SELECT * FROM acercarlogistca.viaje
+2020-04-20 05:40:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:40:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:41:09
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:41:09
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:41:57
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:41:57
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:42:11
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:42:11
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:50:19
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:50:19
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:50:19
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:50:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:50:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:50:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:51:56
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:51:56
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:51:56
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:51:58
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:51:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:51:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:51:58
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:51:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:51:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:52:28
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:52:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:52:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:54:06
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:54:06
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:54:06
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 05:54:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 05:54:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 05:54:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:00:19
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:00:19
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:00:19
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:00:50
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:00:50
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:00:50
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:01:31
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:01:31
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:01:31
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:01:42
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:01:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:01:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:01:58
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:01:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:01:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:02:46
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:02:46
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:02:46
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:04:42
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:04:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:04:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:05:29
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:05:29
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:05:29
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:06:40
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:06:40
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:06:40
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:07:44
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:07:44
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:07:44
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:08:10
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:08:10
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:08:10
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:08:21
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:08:21
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:08:21
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:08:30
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:08:30
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:08:30
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:13:52
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:13:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:13:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:14:46
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:14:46
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:14:46
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:15:12
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:15:12
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:15:12
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:16:04
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:16:04
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:16:04
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:17:58
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:17:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:17:58
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:18:28
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:18:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:18:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:18:31
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:18:31
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:18:31
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:19:00
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:19:00
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:19:00
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:19:15
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:19:15
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:19:15
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:19:25
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:19:25
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:19:25
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:19:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:19:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:19:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:19:50
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:19:50
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:19:50
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:20:04
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:20:04
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:20:04
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:20:15
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:20:15
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:20:15
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:20:28
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:20:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:20:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:20:38
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:20:38
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:20:38
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:20:52
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:20:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:20:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:21:28
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:21:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:21:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:21:42
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:21:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:21:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:21:54
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:21:54
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:21:54
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:23:26
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:23:26
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:23:26
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:24:08
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:24:08
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:24:08
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:24:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:24:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:24:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:27:32
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:27:32
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:27:32
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:28:52
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:28:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:28:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:29:08
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:29:08
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:29:08
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:29:59
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:29:59
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:29:59
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:30:28
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:30:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:30:28
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:31:07
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:31:07
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:31:07
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:31:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:31:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:31:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:37:23
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:37:23
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:37:24
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:39:13
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:39:13
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:39:13
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:40:03
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:40:03
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:40:03
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:40:34
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:40:34
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:40:34
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:40:36
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:40:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:40:36
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:40:37
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:40:37
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:40:37
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:40:52
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:40:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:40:52
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:41:20
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:41:20
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:41:20
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:41:42
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:41:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:41:42
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:42:22
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:42:22
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:42:22
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:42:56
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:42:56
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:42:56
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:44:43
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:44:43
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:44:43
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-20 06:44:53
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-20 06:44:53
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-20 06:44:53
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-22 02:33:05
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-22 02:33:05
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-22 02:33:05
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-22 02:43:14
+SELECT * FROM acercarlogistca.servicio;
+2020-04-22 02:49:12
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-22 02:49:12
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-22 02:49:13
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-22 02:53:31
+SELECT * FROM acercarlogistca.chofer;
+2020-04-22 02:53:41
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-22 02:53:47
+SELECT * FROM acercarlogistca.chofer;
+2020-04-22 02:53:56
+SELECT * FROM acercarlogistca.servicio;
+2020-04-22 02:54:01
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-22 02:54:26
+SELECT * FROM acercarlogistca.chofer;
+2020-04-22 02:55:45
+SELECT * FROM acercarlogistca.chofer;
