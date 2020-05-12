@@ -98,9 +98,9 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="index.php?menu=ListaPrecios"><i class="fa fa-list"></i> Lista de precio</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-dollar"></i> Precios</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-line-chart"></i> Aumento</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-rotate-left"></i> Backup</a></li>
+            <li><a href="index.php?menu=Precio"><i class="fa fa-dollar"></i> Precios</a></li>
+            <li><a href="index.php?menu=AumentoPrecio"><i class="fa fa-line-chart"></i> Aumento</a></li>
+            <li><a href="index.php?menu=Backup"><i class="fa fa-rotate-left"></i> Backup</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -152,8 +152,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="index.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
-            <li><a href="Listado.php"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
-            <li><a href="NuevaSolicitud.php"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="index.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
+            <li><a href="index.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
           </ul>
         </li>
         <li class="treeview">

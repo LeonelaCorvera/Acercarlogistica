@@ -51,7 +51,7 @@
                
               <div class="col-xs-3">
                 <div class="form-group">
-                  <label>Vehiculo:</label>
+                  <label>Lista de precio:</label>
                   <select class="form-control" name="tipo">
                     <option>1</option>
                   </select>

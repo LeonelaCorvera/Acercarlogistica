@@ -1398,3 +1398,71 @@ SELECT * FROM acercarlogistca.cllienteempresa;
 SELECT * FROM acercarlogistca.chofer;
 2020-04-22 02:55:45
 SELECT * FROM acercarlogistca.chofer;
+2020-04-29 02:14:14
+SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1
+2020-04-29 02:14:14
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0;
+2020-04-29 02:14:14
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;
+2020-04-29 02:15:09
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 02:26:10
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 02:26:37
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 02:28:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 02:47:04
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 02:47:06
+SELECT * FROM acercarlogistca.servicio;
+2020-04-29 02:57:50
+SELECT * FROM acercarlogistca.vehiculo;
+2020-04-29 02:57:59
+SELECT * FROM acercarlogistca.chofer;
+2020-04-29 02:59:45
+SELECT * FROM acercarlogistca.chofer;
+2020-04-29 02:59:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:03:51
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:05:17
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:08:07
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:09:02
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:09:44
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:10:12
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:11:43
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:12:50
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:13:10
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:13:57
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:14:49
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:23:28
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:23:35
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:25:01
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-04-29 03:52:00
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-29 03:57:31
+SELECT * FROM acercarlogistca.cllienteempresa;
+2020-04-29 04:01:44
+SELECT * FROM acercarlogistca.cliente;
+2020-04-29 04:02:01
+SELECT * FROM acercarlogistca.cliente;
+2020-04-29 04:02:33
+SELECT * FROM acercarlogistca.cliente;
+2020-04-29 04:03:03
+SELECT * FROM acercarlogistca.cliente;
+2020-04-29 04:04:36
+SELECT * FROM acercarlogistca.cliente;

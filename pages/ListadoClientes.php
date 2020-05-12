@@ -1,14 +1,3 @@
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet" />
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-
-<section class="content-header">
-      <h1>
-        Vehiculos
-      </h1>
-
-</section>
-
 <section class="content">
 
       
@@ -25,30 +14,36 @@
 
             <div class="box-header">
               <h3 class="box-title">Lista de clientes</h3>
-                <div class="form-group">
-<br>
-                  <div class="col-xs-3">
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+
+              <div class="col-xs-3">
                  <label onclick="document.getElementById('c1').submit();">
                       <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
                   </label>
                 </div>
 
 
-                  <div class="col-sm-offset-2 col-sm-10">
-                      <div class="checkbox">
-                        <form action="listarclientes.php" method="post" id="c1">
-                          <label onclick="document.getElementById('c1').submit();">
-                              <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="PERSONAS" data-off="EMPRESAS" data-onstyle="success" data-offstyle="info" >
-                          </label>
-                           </form>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              
-                
+              <table id="example2" class="table table-bordered table-striped">
+                <thead>
+
+                <tr>
+                  <th>Id</th>
+                  <th>Razon social</th>
+                  <th>Contacto</th>
+                  <th>Tip.Doc.</th>
+                  <th>Documento</th>
+                  <th>Direccion</th>
+                  <th>Telefono</th>
+                  <th>Fecha de alta</th>
+                  <th>Lista de precio</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                  
 
                   <?php
 
@@ -59,7 +54,23 @@
                   ?>
 
 
-            
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Id</th>
+                  <th>Razon social</th>
+                  <th>Contacto</th>
+                  <th>Tip.Doc.</th>
+                  <th>Documento</th>
+                  <th>Direccion</th>
+                  <th>Telefono</th>
+                  <th>Fecha de alta</th>
+                  <th>Lista de precio</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+                </tfoot>
+              </table>
             </div>
             
         </div>
@@ -79,39 +90,30 @@
 
 
 
+<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-notify " role="document">
+    <!--Content-->
+    <div class="modal-content text-center">
+      <!--Header-->
+      <div class="modal-header d-flex justify-content-center">
+        <h4>Seguro que desea deshabilitar este vehiculo?</h4>
+      </div>
 
+      <!--Body-->
+      <div class="modal-body">
 
-  <div class="control-sidebar-bg"></div>
+        <i class="fa fa-trash fa-4x animated rotateIn text-red"></i>
 
-<!-- ./wrapper -->
+      </div>
 
-<!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- DataTables -->
-<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<!-- page script -->
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': true,
-      'searching'   : true,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : true
-    })
-  })
-</script>
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+        <a href="" class="btn btn-default pull-left">Si</a>
+        <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
 
