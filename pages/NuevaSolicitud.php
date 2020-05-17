@@ -1,3 +1,18 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+<style type="text/css">
+
+  #mapid { 
+    height: 380px; 
+  }
+
+  </style>
 
 <section class="content">
 
@@ -45,17 +60,14 @@
                 </div>
                 
             </div>
+
+            <div id="mapid"></div>
 <br>           
              <div class="row">
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="col-xs-3">
                   <label>Calle:</label>
-                  <select class="form-control" name="tipo">
-                    <option value="dni">DNI</option>
-                    <option value="cuit">CUIT</option>
-                  </select>
+                  <input type="text" class="form-control" name="doc">
                 </div>
-              </div>
                 <div class="col-xs-2">
                   <label>Altura:</label>
                   <input type="text" class="form-control" name="doc">
@@ -71,23 +83,19 @@
                   <input type="text" class="form-control" name="doc">
                 </div>
                
-                <div class="col-xs-4">
-                  <button type="submit" class="btn btn-success">Guardar</button>
+                <div class="col-xs-2">
+                  <br>
+                  <button type="submit" class="btn btn-success">Buscar</button>
                 </div>
             </div>
 <br>
 
 
             <div class="row">
-              <div class="col-xs-2">
-                <div class="form-group">
+              <div class="col-xs-3">
                   <label>Calle:</label>
-                  <select class="form-control" name="tipo">
-                    <option value="dni">DNI</option>
-                    <option value="cuit">CUIT</option>
-                  </select>
+                  <input type="text" class="form-control" name="doc">
                 </div>
-              </div>
                 <div class="col-xs-2">
                   <label>Altura:</label>
                   <input type="text" class="form-control" name="doc">
@@ -103,8 +111,9 @@
                   <input type="text" class="form-control" name="doc">
                 </div>
                
-                <div class="col-xs-4">
-                  <button type="submit" class="btn btn-success">Guardar</button>
+                <div class="col-xs-2">
+                  <br>
+                  <button type="submit" class="btn btn-success">Buscar</button>
                 </div>
              </div>
 
@@ -118,3 +127,19 @@
        
       </div>
       <!-- /.box -->
+<script>
+
+var mymap = L.map('mapid').setView([-34.60721491, -58.4577942], 13);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoibGVvbmVsYWNvcnZlcmE5MCIsImEiOiJja2E3djFnd2YwMXo5MnFtaDA4Z3B6YXgwIn0.A1NhXamH0BoSUjRuanbqKw', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+</script>

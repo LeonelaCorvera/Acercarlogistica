@@ -20,7 +20,7 @@
 
 
 
-              <table id="example2" class="table table-bordered table-striped">
+              <table id="example" class="table table-bordered table-striped">
                 <thead>
 
                 <tr>
@@ -138,4 +138,3 @@
     <!--/.Content-->
   </div>
 </div>
-

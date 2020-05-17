@@ -28,10 +28,17 @@
                   <label>Modelo:</label>
                   <input type="text" class="form-control" name="modelo">
                 </div>
-                 <div class="col-xs-2">
-                  <label>Año:</label>
-                  <input type="text" class="form-control" name="anio">
+              <div class="col-xs-2">
+                <label>Año:</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
                 </div>
+                <!-- /.input group -->
+              </div>
             </div>
 <br>
              <div class="row">
@@ -64,3 +71,15 @@
        
       </div>
       <!-- /.box -->
+<script>
+  $(function () {
+
+    //Date picker
+    $("#datepicker").datepicker( {
+    format: "yyyy",
+    startView: "years", 
+    minViewMode: "years"
+});
+
+  })
+</script>

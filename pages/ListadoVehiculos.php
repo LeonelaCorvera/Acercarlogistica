@@ -1,4 +1,6 @@
 
+
+
 <section class="content-header">
       <h1>
         Vehiculos
@@ -32,8 +34,8 @@
                   </label>
                 </div>
 
-
-              <table id="example2" class="table table-bordered table-striped">
+              <div style="overflow-y: scroll;height:400px; width: 99%">
+              <table id="example" class="table table-bordered table-striped" >
                 <thead>
 
                 <tr>
@@ -73,6 +75,7 @@
                 </tr>
                 </tfoot>
               </table>
+              </div>
             </div>
             
         </div>
@@ -119,3 +122,55 @@
   </div>
 </div>
 
+<script>
+
+$(document).ready(function() {
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Buscar '+title+'" />' );
+    } );
+ 
+ 
+    var table = $('#example').DataTable({
+"language": {
+        search: 'Buscar:',
+        "lengthMenu": "Mostrando _MENU_ registros por pagina",
+        "zeroRecords": "Sin datos",
+        "info": "Mostrando _PAGE_ de _PAGES_",
+        "infoEmpty": "Sin registros",
+        "infoFiltered": "(filtrados de _MAX_)",
+paginate: {
+    first: 'Primero',
+    previous: 'Anterior',
+    next: 'Siguiente',
+    last: 'Último',
+  }
+    }
+});
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+
+</script>
+ <script>
+  $(function () {
+    
+    $('#example').DataTable({
+      'paging'      : true,
+      'lengthChange': true,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : true
+    })
+  })
+</script>

@@ -13,9 +13,9 @@
 		            <!-- /.box-header -->
 		            <div class="box-body">
 
-		            	<div class="form-group"style="width: 89%;">
+		            	<div class="form-group" style="width: 89%;">
 				            <label>Tipo de vehiculo:</label>
-				            <select class="form-control" name="tipo">
+				            <select class="form-control select2" name="tipo">
 				               <option>Seleccionar</option>
 				            </select>
 			             </div>

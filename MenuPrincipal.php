@@ -34,10 +34,7 @@
               <li class="user-header">
                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
-                </p>
+              
               </li>
               <!-- Menu Body -->
               
@@ -101,6 +98,7 @@
             <li><a href="index.php?menu=Precio"><i class="fa fa-dollar"></i> Precios</a></li>
             <li><a href="index.php?menu=AumentoPrecio"><i class="fa fa-line-chart"></i> Aumento</a></li>
             <li><a href="index.php?menu=Backup"><i class="fa fa-rotate-left"></i> Backup</a></li>
+            <li><a href="index.php?menu=Adicional"><i class="fa  fa-plus-square-o"></i> Adicionales</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -144,6 +142,31 @@
         </li>
         <li class="treeview">
           <a href="#">
+            <i class="fa fa-line-chart text-white"></i>
+            <span>Ganaciias</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?menu=Ganancias"><i class="fa fa-file"></i> Calcular ganancias</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-money text-lime"></i>
+            <span>Comisiones</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?menu=Comisiones"><i class="fa fa-file"></i> Calcular comisiones</a></li>
+            <li><a href="index.php?menu=ReporteComisiones"><i class="fa fa-file"></i> Reporte de comisiones</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-suitcase text-purple"></i>
             <span>Solicitudes</span>
             <span class="pull-right-container">
@@ -167,6 +190,18 @@
           <ul class="treeview-menu">
             <li><a href="index.php?menu=ListadoUsuarios"><i class="fa fa-list"></i> Lista de usuarios</a></li>
             <li><a href="index.php?menu=NuevoUsuario"><i class="fa fa-user-plus"></i> Nuevo</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-user text-yellow"></i>
+            <span>Perfil</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?menu=Perfil"><i class="fa fa-list"></i>Perfiles</a></li>
           </ul>
         </li>
    
