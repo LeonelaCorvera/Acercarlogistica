@@ -14,7 +14,7 @@
 
      <div class="box-body">
 
-      <table id="example1" action="insertarvehiculo.php" method="post">
+      <form id="example1" action="insertarvehiculo.php" method="post">
               <div class="row">
                 <div class="col-xs-3">
                   <label>Patente:</label>
@@ -35,7 +35,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker">
+                  <input type="text" class="form-control pull-right" id="datepicker" name="anio">
                 </div>
                 <!-- /.input group -->
               </div>
@@ -46,7 +46,19 @@
                 <div class="form-group">
                   <label>Tipo de vehiculo:</label>
                   <select class="form-control" name="tipo">
-                    <option>Auto</option>
+                    <option value=''>Seleccionar</option>
+                    <?php
+
+                        include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+                          $consulta="SELECT * FROM acercarlogistca.tipodevehiculo;";
+                          $resultado=db_query($consulta);
+
+                          foreach($resultado as $fila){
+
+                            echo "<option value='".$fila[idTipoDeVehiculo]."'>(".$fila[idTipoDeVehiculo].")-".$fila[descripcion]."</option>";
+                          }
+                      ?>
                   </select>
                 </div>
               </div>
@@ -54,8 +66,8 @@
                 <div class="form-group">
                   <label>Seguro al dia:</label>
                   <select class="form-control" name="seguro">
-                    <option>Si</option>
-                    <option>No</option>
+                    <option value='1'>Si</option>
+                    <option value='0'>No</option>
                   </select>
                 </div>
               </div>
@@ -66,7 +78,7 @@
                <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-right">Guardar</button>
               </div>
-        </table>
+        </form>
         <!-- /.box-body -->
        
       </div>

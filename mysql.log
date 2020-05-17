@@ -1612,3 +1612,269 @@ SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfi
 SELECT * FROM acercarlogistca.servicio;
 2020-05-17 05:41:48
 SELECT * FROM acercarlogistca.servicio;
+2020-05-17 07:09:46
+SELECT * FROM acercarlogistca.servicio;
+2020-05-17 07:29:50
+-11,1);
+2020-05-17 07:30:32
+-11,1);
+2020-05-17 07:31:19
+-10,0);
+2020-05-17 07:33:03
+INSERT INTO servicio(descripcion,km,fijo,hora)VALUES('Mensajeria',1,0,0);
+2020-05-17 07:33:03
+SELECT * FROM acercarlogistca.servicio;
+2020-05-17 10:24:13
+INSERT INTO chofer(nombre,Apellido,dni,telefono,idVehiculo,flagBaja,disponibilidad)VALUES('Sergio','Denis','87654321','4826-3193','1');
+2020-05-17 10:26:08
+INSERT INTO chofer(nombre,Apellido,dni,telefono,idVehiculo,flagBaja,disponibilidad)VALUES('Sergio','Denis','87654321','1132454428','1');
+2020-05-17 10:27:22
+INSERT INTO chofer(nombre,Apellido,dni,telefono,idVehiculo)VALUES('Sergio','Denis','87654321','4826-3193','1');
+2020-05-17 10:29:00
+SELECT * FROM acercarlogistca.chofer;
+2020-05-17 10:29:30
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 10:44:11
+SELECT * FROM acercarlogistca.chofer;
+2020-05-17 10:47:55
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 10:48:43
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 10:50:44
+SELECT * FROM acercarlogistca.tipodevehiculo;
+2020-05-17 10:53:38
+SELECT * FROM acercarlogistca.tipodevehiculo where activa=1;
+2020-05-17 10:54:21
+SELECT * FROM acercarlogistca.tipodevehiculo where activa=1;
+2020-05-17 10:55:09
+SELECT * FROM acercarlogistca.tipodevehiculo where activa=1;
+2020-05-17 10:55:15
+SELECT * FROM acercarlogistca.tipodevehiculo where activa=1;
+2020-05-17 10:55:20
+SELECT * FROM acercarlogistca.tipodevehiculo where activa=1;
+2020-05-17 10:57:00
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:00:50
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:01:11
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:01:13
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:01:33
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:02:35
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:02:36
+SELECT * FROM servicio;
+2020-05-17 11:03:49
+SELECT * FROM acercarlogistca.listadeprecios where activa=1;
+2020-05-17 11:03:49
+SELECT * FROM servicio;
+2020-05-17 11:04:11
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:14:15
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:15:02
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:15:20
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:15:46
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:16:29
+SELECT * FROM acercarlogistca.servicio;
+2020-05-17 11:20:03
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:20:19
+SELECT u.*,r.descripcion FROM acercarlogistca.usuario u join rol r on u.id_perfil=r.idrol
+2020-05-17 11:21:36
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:21:56
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:22:27
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:23:03
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:23:44
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:24:04
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:24:53
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:28:49
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:30:37
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:32:36
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:32:54
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:33:30
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:33:44
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:33:44
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 11:35:01
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:35:01
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:35:02
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:35:02
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:35:37
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:35:37
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:37:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:37:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:39:16
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:39:16
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:40:30
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:40:30
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:40:55
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:40:55
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:34
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:34
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:43
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:43
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:41:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:19
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:19
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:27
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:27
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:42:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:43:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:43:48
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 11:46:05
+SELECT * FROM acercarlogistca.servicio;
+2020-05-17 11:49:02
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 12:27:50
+SELECT * FROM acercarlogistca.cliente;
+2020-05-17 12:35:09
+SELECT * FROM acercarlogistca.tipodevehiculo;
+2020-05-17 12:45:30
+SELECT * FROM acercarlogistca.tipodevehiculo;
+2020-05-17 12:48:35
+SELECT * FROM acercarlogistca.tipodevehiculo;
+2020-05-17 12:49:21
+SELECT * FROM acercarlogistca.tipodevehiculo;
+2020-05-17 12:49:47
+INSERT INTO vehiculo(patente,marca,modelo,anio,seguroAlDia,idTipoDeVehiculo)VALUES('fff-lll','susuki','fun','2010','1',1);
+2020-05-17 12:49:47
+SELECT * FROM acercarlogistca.vehiculo;
+2020-05-17 12:52:55
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:52:55
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:52:57
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:52:57
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:54:35
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:54:35
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:54:40
+INSERT INTO acercarlogistca.listadeprecios(descripcion)VALUES('');
+2020-05-17 12:54:40
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:54:40
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:55:30
+INSERT INTO acercarlogistca.listadeprecios(descripcion)VALUES('');
+2020-05-17 12:55:30
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:55:30
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:56:52
+INSERT INTO acercarlogistca.listadeprecios(descripcion)VALUES('delel');
+2020-05-17 12:56:52
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:56:52
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:59:50
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 12:59:50
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:09
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:09
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:43
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:43
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:00:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:12
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:12
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:20
+INSERT INTO acercarlogistca.listadeprecios(descripcion,esGeneral)VALUES('Telefonica',0);
+2020-05-17 13:02:20
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:20
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:33
+INSERT INTO acercarlogistca.listadeprecios(descripcion,esGeneral)VALUES('Diarco',0);
+2020-05-17 13:02:33
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:02:33
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:03:45
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:03:45
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:03:59
+INSERT INTO acercarlogistca.listadeprecios(descripcion,esGeneral)VALUES('nueva  Independencia',0);
+2020-05-17 13:03:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:03:59
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:04:28
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:04:28
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:05:41
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:05:41
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:06:17
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:06:17
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:06:24
+INSERT INTO acercarlogistca.listadeprecios(descripcion,esGeneral)VALUES('Aristobulo del valle',1);
+2020-05-17 13:06:24
+SELECT * FROM acercarlogistca.listadeprecios;
+2020-05-17 13:06:24
+SELECT * FROM acercarlogistca.listadeprecios;

@@ -21,9 +21,19 @@
                   <div class="form-group">
                   <label>Lista de precios:</label>
                   <select class="form-control" name="tipo">
-                    <option>Seleccionar</option>
-                    <option>Recepcionista</option>
-                    <option>Cliente</option>
+                    <option value=''>Seleccionar</option>
+                    <?php
+
+                        include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+                          $consulta="SELECT * FROM acercarlogistca.listadeprecios where activa=1;";
+                          $resultado=db_query($consulta);
+
+                          foreach($resultado as $fila){
+
+                            echo "<option value='".$fila[id]."'>(".$fila[id].")-".$fila[descripcion]."</option>";
+                          }
+                      ?>
                   </select>
                 </div>
                 </div>
@@ -31,9 +41,17 @@
                   <div class="form-group">
                   <label>Servicio:</label>
                   <select class="form-control" name="tipo">
-                    <option>Administrador</option>
-                    <option>Recepcionista</option>
-                    <option>Cliente</option>
+                    <option value=''>Seleccionar</option>
+                    <?php
+
+                          $consulta="SELECT * FROM servicio;";
+                          $resultado=db_query($consulta);
+
+                          foreach($resultado as $fila){
+
+                            echo "<option value='".$fila[idServicio]."'>(".$fila[idServicio].")-".$fila[descripcion]."</option>";
+                          }
+                      ?>
                   </select>
                 </div>
                 </div>

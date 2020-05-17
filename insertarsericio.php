@@ -2,14 +2,14 @@
 
 include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 
-$des= $_POST['servicio'];
+$des= $_POST['des']; 
 
+$km = ($_POST['km']=='on') ? 1 : 0 ;
+$fijo = ($_POST['fijo']=='on') ? 1 : 0 ;
+$hora = ($_POST['hora']=='on') ? 1 : 0 ;
 
-	$consulta="INSERT INTO acercarlogistca.servicio(descripcion)VALUES('".$des."');";
+	$consulta="INSERT INTO servicio(descripcion,km,fijo,hora)VALUES('".$des."',".$km.",".$fijo.",".$hora.");";
 	$resultado=db_query($consulta);
-
-
-	echo "<script type='text/javascript'>alert('holA');</script>";
 
 	header("Location: index.php?menu=ListadoServicios");
 

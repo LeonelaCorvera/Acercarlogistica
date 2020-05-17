@@ -14,7 +14,6 @@ $tipo= $_POST['tipo'];
 	
 	$resultado=db_query($consulta);
 
-
 	header("Location: index.php?menu=ListadoVehiculos");
 
 ?>

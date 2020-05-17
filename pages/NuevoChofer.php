@@ -14,7 +14,7 @@
 
      <div class="box-body">
 
-      <table id="example1" action="insertarchofer.php" method="post">
+      <form action="insertarchofer.php" method="post">
               <div class="row">
                 <div class="col-xs-3">
                   <label>Nombre:</label>
@@ -38,8 +38,20 @@
               <div class="col-xs-3">
                 <div class="form-group">
                   <label>Vehiculo:</label>
-                  <select class="form-control" name="tipo">
-                    <option>1</option>
+                  <select class="form-control" name="vehiculo">
+                    <option value='0'>Seleccionar</option>
+                      <?php
+
+                        include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+                          $consulta="SELECT * FROM acercarlogistca.vehiculo;";
+                          $resultado=db_query($consulta);
+
+                          foreach($resultado as $fila){
+
+                            echo "<option value='".$fila[idVehiculo]."'>(".$fila[idVehiculo].")-".$fila[patente]."</option>";
+                          }
+                      ?>
                   </select>
                 </div>
               </div>
@@ -50,7 +62,7 @@
               <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-right">Guardar</button>
               </div>
-        </table>
+        </form>
         <!-- /.box-body -->
        
       </div>

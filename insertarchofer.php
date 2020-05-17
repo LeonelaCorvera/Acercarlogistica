@@ -9,7 +9,7 @@ $telefono= $_POST['telefono'];
 $vehiculo= $_POST['vehiculo'];
 
 
-	$consulta="INSERT INTO chofer(nombre,Apellido,dni,telefono,idVehiculo,flagBaja,disponibilidad)VALUES('".$nombre."','".$apellido."','".$dni."','".$telefono."','".$vehiculo."');";
+	$consulta="INSERT INTO chofer(nombre,Apellido,dni,telefono,idVehiculo)VALUES('".$nombre."','".$apellido."','".$dni."','".$telefono."','".$vehiculo."');";
 	
 	$resultado=db_query($consulta);
 

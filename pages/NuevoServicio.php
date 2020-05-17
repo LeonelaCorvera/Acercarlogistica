@@ -16,14 +16,12 @@
      <div class="box-body">
 
 
+            <form action="insertarsericio.php" method="POST">
+
               <div class="row">
                 <div class="col-xs-3">
                   <label>Nombre:</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="col-xs-3">
-                  <label>Descripcion:</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" name="des">
                 </div>
               </div>
 
@@ -32,21 +30,21 @@
                 <div class="col-xs-2">
                   <h4>Valor fijo:</h4>
                  <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
+                      <input  name="fijo" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
                   </label>
                 </div>
 
                 <div class="col-xs-2">
                    <h4>Valor por hora:</h4>
                  <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
+                      <input  name="hora" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
                   </label>
                 </div>
 
                 <div class="col-xs-2">
                   <h4>Valor por km:</h4>
                  <label onclick="document.getElementById('c1').submit();"> 
-                      <input  name="c1" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
+                      <input  name="km" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
                   </label>
                 </div>
                 
@@ -55,6 +53,7 @@
               <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-right">Guardar</button>
               </div>
+            </form>
 
         <!-- /.box-body -->
        

@@ -6,7 +6,7 @@
 		$fecha=date('Y-m-d H:i:s');
 		file_put_contents('mysql.log', "$fecha\n$sql\n", FILE_APPEND);//Creamos un log de querys
 		
-		$res=mysqli_query($con,$sql)or die("Fallo al realizar la consulta!!!!");
+		$res=mysqli_query($con,$sql)or die("Fallo al realizar la consulta!!!!".$sql);
 			
 		$arr=array();
 		while($row=mysqli_fetch_assoc($res)){

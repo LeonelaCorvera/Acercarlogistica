@@ -11,7 +11,18 @@
         <label>Chofer:</label>
         <select class="form-control select2" name="tipo">
            <option>Seleccionar</option>
-           <option>Federico Rodriguez</option>
+           <?php
+
+            include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+              $consulta="SELECT * FROM acercarlogistca.chofer;";
+              $resultado=db_query($consulta);
+
+              foreach($resultado as $fila){
+
+                echo "<option value='".$fila[idChofer]."'>(".$fila[idChofer].")-".$fila[nombre]." ".$fila[Apellido]."</option>";
+              }
+          ?>
         </select>
      </div>
     </div>    
