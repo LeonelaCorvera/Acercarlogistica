@@ -1,5 +1,8 @@
 
 
+<div id="resp">
+
+
 <section class="content-header">
       <h1>
         Servicios
@@ -29,12 +32,12 @@
 
               <div class="col-xs-3">
                  <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
+                      <input  id="c1" name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
                   </label>
                 </div>
 
 
-              <table id="example1" class="table table-bordered table-striped">
+              <table id="evaluate" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                   <th>Id</th>
@@ -86,6 +89,9 @@
 
 </section>
 
+
+
+
 <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-sm modal-notify " role="document">
@@ -111,4 +117,26 @@
     </div>
     <!--/.Content-->
   </div>
+</div>
+
+<script type="text/javascript">
+
+  
+function sendId(id){  
+  
+        var url = "pages/EditServicio.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+
+</script>
+
 </div>

@@ -9,6 +9,8 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 
 	foreach($resultado as $fila){
 
+		$id = (isset($fila['idVehiculo'])) ? $fila['idVehiculo'] : 0 ;
+
 		if ($fila['seguroAlDia']==1) {
 			$seguro='Si';
 		}else{
@@ -43,7 +45,7 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 			<td>"."$tipo"."</td>
 			<td>
 			<a href='index.php?menu=DetalleVehiculo' class='btn btn-primary'><i class='fa fa-eye'></i></a>
-			<a href='index.php?menu=EditVehiculo' class='btn btn-success'><i class='fa fa-edit'></i></a>
+			<button type='button' value='".$id."' class='btn btn-success' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
 			<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
 			</td></tr>";
 

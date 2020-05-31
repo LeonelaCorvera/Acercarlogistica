@@ -1,7 +1,7 @@
 <?php
   
   if(!isset($_GET['menu'])){
-    $menu="tablero.php";
+    $menu="pages/tablero.php";
   }else{
     $menu=$_GET['menu'];
     $menu= "pages/".$menu.".php";

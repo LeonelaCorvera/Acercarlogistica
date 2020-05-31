@@ -46,7 +46,19 @@
                   <div class="form-group">
                   <label>Cliente:</label>
                   <select class="form-control" name="tipo">
-                    <option>1</option>
+                    <option value='0'>Seleccionar</option>
+                      <?php
+
+                        include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+                          $consulta="SELECT * FROM cliente;";
+                          $resultado=db_query($consulta);
+
+                          foreach($resultado as $fila){
+
+                            echo "<option value='".$fila[idcliente]."'>".$fila[razon_social]."</option>";
+                          }
+                      ?>
                   </select>
                 </div>
                 </div>

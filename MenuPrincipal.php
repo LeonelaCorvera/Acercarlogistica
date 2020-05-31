@@ -125,6 +125,7 @@
           <ul class="treeview-menu">
             <li><a href="index.php?menu=ListadoChoferes"><i class="fa fa-list"></i> Listado</a></li>
             <li><a href="index.php?menu=NuevoChofer"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="index.php?menu=Vencimientos"><i class="fa fa-file"></i> Vencimientos</a></li>
           </ul>
         </li>
         <li class="treeview">
