@@ -37,9 +37,6 @@ $resultado=db_query($consulta);
 
 foreach($resultado as $fila){
 
-  $fijo = ($fila['fijo']=="Si") ? 1 : 0 ;
-  $hora = ($fila['hora']=="Si") ? 1 : 0 ;
-  $km = ($fila['km']=="Si") ? 1 : 0 ;
 
           echo " <form action='editarservicio.php' method='post'>
               <div class='row'>
@@ -47,33 +44,11 @@ foreach($resultado as $fila){
                   <label>Nombre:</label>
                   <input type='text' class='form-control' name='des' value="."$fila[descripcion]".">
                 </div>
+                <div class='col-xs-1'>
+                  <input type='hidden' class='form-control' name='id' value=".$id.">
+                </div>
               </div>
 
-              <br>
-
-              <div class='row'>
-                <div class='col-xs-2'>
-                  <h4>Valor fijo:</h4>
-                 <label onclick='document.getElementById('c1').submit();'>
-                      <input id='c1' name='fijo' type='checkbox'  data-toggle='toggle' data-on='ON' data-off='OFF' data-onstyle='primary' data-offstyle='danger' >
-                  </label>
-                </div>
-
-                <div class='col-xs-2'>
-                   <h4>Valor por hora:</h4>
-                 <label onclick='document.getElementById('c1').submit();'>
-                      <input id='c1' name='hora' type='checkbox'  data-toggle='toggle' data-on='ON' data-off='OFF' data-onstyle='primary' data-offstyle='danger' >
-                  </label>
-                </div>
-
-                <div class='col-xs-2'>
-                  <h4>Valor por km:</h4>
-                 <label onclick='document.getElementById('c1').submit();'> 
-                      <input id='c1' name='km' type='checkbox'  data-toggle='toggle' data-on='ON' data-off='OFF' data-onstyle='primary' data-offstyle='danger' >
-                  </label>
-                </div>
-                
-              </div>
 
               <br><br>
 

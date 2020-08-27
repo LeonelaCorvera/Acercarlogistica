@@ -1,3 +1,5 @@
+<div id="resp">
+
 <section class="content-header">
       <h1>
         Choferes
@@ -118,4 +120,24 @@
     </div>
     <!--/.Content-->
   </div>
+</div>
+
+<script>
+function sendId(id){  
+  
+        var url = "pages/EditChofer.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+
+</script>
+
 </div>

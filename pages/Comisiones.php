@@ -9,7 +9,7 @@
      <div class="box-body">
       <div class="col-xs-4">
         <label>Chofer:</label>
-        <select class="form-control select2" name="tipo">
+        <select class="form-control select2" name="chofer" id="chofer">
            <option>Seleccionar</option>
            <?php
 
@@ -31,7 +31,7 @@
         <div class="box-footer" >
            <button type="button" class="btn btn-success pull-right">Imprimir</button>
            <button type="button" class="btn btn-warning pull-right">Exportar</button>
-           <button type="submit" class="btn btn-primary pull-right">Buscar comisiones pendientes</button>
+           <button type="button" class="btn btn-primary pull-right" onclick="consulta();">Buscar comisiones pendientes</button>
         </div>
   </div>
 </section>
@@ -63,25 +63,8 @@
                   <th>Importe</th>
                 </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>2020-04-28</td>
-                    <td>remis</td>
-                    <td>Federico Rodriguez</td>
-                    <td>CFR srl</td>
-                    <td>ard-123</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>2020-04-28</td>
-                    <td>flete</td>
-                    <td>Federico Rodriguez</td>
-                    <td>Telefonica</td>
-                    <td>ddd-333</td>
-                    <td>100</td>
-                  </tr>
+                <tbody id='lista'>
+                
 
                 </tbody>
                 <tfoot>
@@ -133,8 +116,34 @@
 
 <script>
 
-  $(document).ready(function()
-{
+   function consulta(){  
+
+
+
+    var chofer=$("#chofer").val();
+
+
+    var url = "calcularcomision.php";
+    $.ajax({                                       
+       url: url,                     
+       data:{"chofer": chofer}, 
+       method : 'post',
+       dataType : 'json',
+       success: function(data)             
+       {
+        $('#lista').html(data);
+        calcularTotal();
+       },
+       error: function(data)             
+       {
+          $('#lista').html(data);
+          calcularTotal();
+       }
+
+     });
+  }
+
+ function calcularTotal(){
   //Defino los totales de mis 2 columnas en 0
   var total_col = 0;
   //Recorro todos los tr ubicados en el tbody
@@ -147,5 +156,5 @@
     //Muestro el resultado en el th correspondiente a la columna
     $('#ejemplo tfoot tr th').eq(1).text(total_col);
 
-});
+};
 </script>

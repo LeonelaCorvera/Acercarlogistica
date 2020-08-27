@@ -1,4 +1,4 @@
-
+ 
 <section class="content">
 
       <!-- SELECT2 EXAMPLE -->
@@ -10,28 +10,26 @@
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
           </div>
         </div>
-        <!-- /.box-header -->
 
      <div class="box-body">
 
-      <table id="example1" action="insertarvehiculo.php" method="post">
+      <table id="tabla" action="insertarvehiculo.php" method="post">
               <div class="row">
-                <div class="col-xs-5">
-                    <label>Periodo a calcular:</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input type="text" class="form-control pull-right" id="reservation">
-                    </div>
+                <div class="col-xs-3">
+                    <label>Desde:</label>
+                    <input type="date" class="form-control pull-right" name="desde" id="desde">
+                </div>
+                <div class="col-xs-3">
+                    <label>Hasta:</label>
+                    <input type="date" class="form-control pull-right" name="hasta" id="hasta">
                 </div>
                 
             </div>
 <br><br>
                <div class="box-footer" >
                    <button type="button" class="btn btn-success pull-right">Imprimir</button>
-                   <button type="button" class="btn btn-warning pull-right">Exportar</button>
-                   <button type="submit" class="btn btn-primary pull-right">Buscar</button>
+                   <button type="button" class="btn btn-warning pull-right" id="submitExport">Exportar</button>
+                   <button type="button" class="btn btn-primary pull-right" onclick="consulta()">Buscar</button>
                 
               </div>
         </table>
@@ -42,125 +40,109 @@
 
 
 </section>
-<section class="content">
+
+
+
+<section class='content'>
+
+  <form action="process.php" method="post" target="_blank" id="formExport">
+    <input type="hidden" id="data_to_send" name="data_to_send" />
+</form>
 
       <!-- SELECT2 EXAMPLE -->
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title"> Detalle de viajes</h3>
+      <div class='box box-default'>
+        <div class='box-header with-border'>
+          <h3 class='box-title'> Detalle de viajes</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+          <div class='box-tools pull-right'>
+            <button type='button' class='btn btn-box-tool' data-widget='collapse'><i class='fa fa-minus'></i></button>
           </div>
         </div>
         <!-- /.box-header -->
 
-     <div class="box-body">
+     <div class='box-body'>
 
-      <table id="ejemplo" class="table table-bordered table-striped">
+      <table id="export_to_excel" class='table table-bordered table-striped'>
                 <thead>
 
                 <tr>
                   <th>Id</th>
                   <th>Fecha</th>
+                  <th>Hora</th>
+                  <th>Comision</th>
                   <th>Servicio</th>
                   <th>Chofer</th>
                   <th>Cliente</th>
-                  <th>vehiculo</th>
                   <th>Importe</th>
                 </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>2020-04-28</td>
-                    <td>remis</td>
-                    <td>Jorge Tello</td>
-                    <td>CFR srl</td>
-                    <td>ard-123</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>2020-04-28</td>
-                    <td>flete</td>
-                    <td>Federico Rodriguez</td>
-                    <td>Telefonica</td>
-                    <td>ddd-333</td>
-                    <td>100</td>
-                  </tr>
+                <tbody id='lista'>
+                
 
                 </tbody>
                 <tfoot>
                 <tr>
-                 <th colspan="6">Total</th>
-                  <th>2200</th>
-                  
+                  <th colspan='7'>Total</th>
+                  <th id="total">2100</th>
                 </tr>
                 </tfoot>
               </table>
-        <!-- /.box-body -->
-       
       </div>
-      <!-- /.box -->
-</section>
+   </section>
+
+                
+
 
 <script>
-  $(function () {
 
-    //Date range picker
-    $('#reservation').daterangepicker({
-    "locale": {
-        "format": "YYYY-MM-DD",
-        "separator": " - ",
-        "applyLabel": "Aceptar",
-        "cancelLabel": "Cancelar",
-        "fromLabel": "From",
-        "toLabel": "To",
-        "customRangeLabel": "Custom",
-        "daysOfWeek": [
-            "Do",
-            "Lu",
-            "Ma",
-            "Mi",
-            "Ju",
-            "Vi",
-            "Sa"
-        ],
-        "monthNames": [
-            "Enero",
-            "Febrero",
-            "Marzo",
-            "Abril",
-            "Mayo",
-            "Junio",
-            "Julio",
-            "Agosto",
-            "Septiembre",
-            "Octubre",
-            "Noviembre",
-            "Diciembre"
-        ],
-        "firstDay": 0
-    }
-})
-    //Date range picker with time picker
-    
-  })
+  function consulta(){  
 
-  $(document).ready(function()
-{
+  var desde=$("#desde").val();
+  var hasta=$("#hasta").val();
+
+
+  var url = "calcularganancia.php";
+  $.ajax({                                       
+     url: url,                     
+     data:{"desde": desde,"hasta":hasta}, 
+     method : 'post',
+     dataType : 'json',
+     success: function(data)             
+     {
+      $('#lista').html(data);
+      calcularTotal();
+     },
+     error: function(data)             
+     {
+        $('#lista').html(data);
+        calcularTotal();
+     }
+
+   });
+}
+ 
+
+function calcularTotal(){
   //Defino los totales de mis 2 columnas en 0
   var total_col = 0;
   //Recorro todos los tr ubicados en el tbody
-  $('#ejemplo tbody').find('tr').each(function (i, el) {
+  $('#export_to_excel tbody').find('tr').each(function (i, el) {
              
         //Voy incrementando las variables segun la fila ( .eq(0) representa la fila 1 )     
-        total_col += parseFloat($(this).find('td').eq(6).text());
+        total_col += parseFloat($(this).find('td').eq(7).text());
                 
     });
     //Muestro el resultado en el th correspondiente a la columna
-    $('#ejemplo tfoot tr th').eq(1).text(total_col);
+    $('#export_to_excel tfoot tr th').eq(1).text(total_col);
 
+};
+
+document.getElementById('submitExport').addEventListener('click', function(e) {
+    e.preventDefault();
+    let export_to_excel = document.getElementById('export_to_excel');
+    let data_to_send = document.getElementById('data_to_send');
+    data_to_send.value = export_to_excel.outerHTML;
+    document.getElementById('formExport').submit();
 });
+
 </script>

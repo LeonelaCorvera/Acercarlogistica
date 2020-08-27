@@ -1,4 +1,4 @@
-<?
+<?php
 /*Ese codigo lo estoy incluyendo con la funcion require_once antes que cualquier etiqueta html.
 Es el que estabamos usando en el curso. Hoy le agregue session_terminate porque nosotros lo haciamos a manopla
 porque asi lo requeriamos en otras partes del codigo.

@@ -15,8 +15,20 @@
 
 		            	<div class="form-group" style="width: 89%;">
 				            <label>Tipo de vehiculo:</label>
-				            <select class="form-control select2" name="tipo">
-				               <option>Seleccionar</option>
+				            <select class="form-control select2" id="yourSelect" name="tipo">
+				               <option value='0'>Seleccionar</option>
+			                      <?php
+
+			                      	include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
+
+			                          $consulta="SELECT * FROM tipodevehiculo;";
+			                          $resultado=db_query($consulta);
+
+			                          foreach($resultado as $fila){
+
+			                            echo "<option value='".$fila[idTipoDeVehiculo]."'>".$fila[descripcion]."</option>";
+			                          }
+			                      ?>
 				            </select>
 			             </div>
 
@@ -35,25 +47,20 @@
 				                </thead>
 				                <tbody>
 
-				                  <?php
+				                <div id="lista">
+					                  <?php
 
-				                  	include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
-				                    include('choferespresentes.php');
+					                  	
+					                    include('choferespresentes.php');
 
 
-				                  ?>
+					                  ?>
+				                 </div>
 				                </tbody>
 				               
 			              </table>
 
-
-
 		              	</div>
-
-
-
-
-
 
 		              </div>
 		              <!-- /.row -->
@@ -77,7 +84,7 @@
 		            </div>
 		            <!-- /.box-header -->
 		            <div class="box-body">
-		            	<button type="submit" class="btn btn-warning pull-right">Asignar</button>
+		            	<button type="button" class="btn btn-warning pull-right" onclick="asignar()">Asignar</button>
 		              <div class="row" >
 		              	<div class="box-body chat" style="overflow-y: scroll; height:400px; width: 99%;">
 		                
@@ -95,7 +102,7 @@
 				                  <th>Chofer</th>
 				                  <th>Cliente</th>
 				                  <th>kms</th>
-				                  <th>Fecha Asignado</th>
+				                  <th>Fecha carga</th>
 				                  <th>Estado</th>
 				                </tr>
 				                </thead>
@@ -149,10 +156,10 @@
 		            </div>
 		            <!-- /.box-header -->
 		            <div class="box-body">
-		            	<button type="submit" class="btn btn-danger pull-right">Reasignar</button>
-		            	<button type="submit" class="btn btn-danger pull-right" style="background-color: #088A68; border-color: #088A68;">Asignado</button>
-		            	<button type="submit" class="btn btn-danger pull-right" style="background-color: #BF00FF; border-color: #BF00FF;">En curso</button>
-		            	<button type="submit" class="btn btn-danger pull-right" style="background-color: #FE9A2E; border-color: #FE9A2E;">Finalizado</button>
+		            	<button type="button" class="btn btn-danger pull-right" onclick="reasignar()">Reasignar</button>
+		            	<button type="button" class="btn btn-danger pull-right" onclick="cambiar_estado('ASIGNADO')" style="background-color: #088A68; border-color: #088A68;" >Asignado</button>
+		            	<button type="button" class="btn btn-danger pull-right" onclick="cambiar_estado('EN CURSO')" style="background-color: #BF00FF; border-color: #BF00FF;" >En curso</button>
+		            	<button type="button" class="btn btn-danger pull-right" onclick="cambiar_estado('FINALIZADO')" style="background-color: #FE9A2E; border-color: #FE9A2E;" >Finalizado</button>
 		              <div class="row">
 		                <div class="box-body chat" color="white" style="overflow-y: scroll; height:400px; width: 99%;">
 		              	 <table id="example2" class="table table-bordered table-striped">
@@ -169,11 +176,11 @@
 				                  <th>Chofer</th>
 				                  <th>Cliente</th>
 				                  <th>kms</th>
-				                  <th>Fecha Asignado</th>
+				                  <th>Fecha carga</th>
 				                  <th>Estado</th>
 				                </tr>
 				                </thead>
-				                <tbody>
+				                <tbody >
 
 				                  <?php
 
@@ -202,3 +209,115 @@
      
 
 </section>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("select#yourSelect").change(function(){
+            alert($("select#yourSelect").val());
+        });
+
+});
+
+function cambiar_estado(estado){
+
+	var valoresCheck="";
+	var cont=0;
+
+	$("input[type=checkbox]:checked").each(function(){
+	    
+	    if (cont>0) {
+	    	valoresCheck+=" , ";
+	    }
+	    valoresCheck+=this.value;
+	    cont++;
+	});
+
+	var url = "cambiarestado.php";
+        $.ajax({                                       
+           url: url,                     
+           data:{"ids": valoresCheck,"estado": estado}, 
+           method : 'post',
+           dataType : 'json',
+           success: function(data)             
+           {
+             location.reload();             
+           },
+           error: function(data)             
+           {
+             location.reload();            
+           }
+         });
+
+}
+
+function reasignar(){
+
+	var chofer = $('input[name="grupo"]:checked').val();
+	var valoresCheck="";
+	var cont=0;
+
+	$("input[type=checkbox]:checked").each(function(){
+	    
+	    if (cont>0) {
+	    	valoresCheck+=" , ";
+	    }
+	    valoresCheck+=this.value;
+	    cont++;
+	});
+
+
+	var url = "reasignar.php";
+        $.ajax({                                       
+           url: url,                     
+           data:{"ids": valoresCheck,"chofer": chofer}, 
+           method : 'post',
+           dataType : 'json',
+           success: function(data)             
+           {
+             location.reload();             
+           },
+           error: function(data)             
+           {
+             location.reload();            
+           }
+         });
+
+}
+
+function asignar(){
+
+	var chofer = $('input[name="grupo"]:checked').val();
+	var valoresCheck="";
+	var cont=0;
+
+	$("input[type=checkbox]:checked").each(function(){
+	    
+	    if (cont>0) {
+	    	valoresCheck+=" , ";
+	    }
+	    valoresCheck+=this.value;
+	    cont++;
+	});
+
+
+	var url = "asignar.php";
+        $.ajax({                                       
+           url: url,                     
+           data:{"ids": valoresCheck,"chofer": chofer}, 
+           method : 'post',
+           dataType : 'json',
+           success: function(data)             
+           {
+             location.reload();             
+           },
+           error: function(data)             
+           {
+             location.reload();            
+           }
+         });
+
+}
+
+
+</script>

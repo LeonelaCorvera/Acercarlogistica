@@ -35,7 +35,7 @@
 
 
 		echo "<tr ".$color.">
-		<td>"."<input type='checkbox'>"."</td>
+		<td>"."<input type='checkbox' value='"."$fila[idViaje]"."'>"."</td>
 		<td>"."$fila[idViaje]"."</td>
 		<td>"."$fila[fecha]"."</td>
 		<td>"."$fila[hora]"."</td>
@@ -45,7 +45,7 @@
 		<td>"."$fila[Chofer_idChofer]"."</td>
 		<td>"."$fila[idClliente]"."</td>
 		<td>"."$fila[km]"."</td>
-		<td>"."$fila[fecha_asignado]"."</td>
+		<td>"."$fila[fecha_carga]"."</td>
 		<td>"."$fila[estado]"."</td>
 		</tr>";
 

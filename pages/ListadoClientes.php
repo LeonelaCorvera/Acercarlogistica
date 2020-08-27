@@ -1,3 +1,5 @@
+<div id="resp">
+
 <section class="content">
 
       
@@ -19,7 +21,7 @@
             <div class="box-body">
 
               <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
+                 <label onclick="hola();">
                       <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
                   </label>
                 </div>
@@ -117,3 +119,22 @@
   </div>
 </div>
 
+<script>
+function sendId(id){  
+  
+        var url = "pages/EditCliente.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+
+</script>
+
+</div>

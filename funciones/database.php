@@ -6,10 +6,10 @@
 		$fecha=date('Y-m-d H:i:s');
 		file_put_contents('mysql.log', "$fecha\n$sql\n", FILE_APPEND);//Creamos un log de querys
 		
-		$res=mysqli_query($con,$sql)or die("Fallo al realizar la consulta!!!!");
+		$res=mysqli_query($con,$sql)or die("Fallo al realizar la consulta!!!!".$sql);
 		//echo mysqli_error($con);
 		if(gettype($res) == 'boolean') {
-			if(stripos('' . $sql,'INSERT') == FALSE )
+			if(stripos('' . $sql,'INSERT') === false )
 				$res=mysqli_affected_rows($con);
 			/* Si la consulta no fue INSERT, devolvemos las cantidad de filas afectadas.*/
 			else

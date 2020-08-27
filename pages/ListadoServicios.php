@@ -42,9 +42,6 @@
                 <tr>
                   <th>Id</th>
                   <th>Descripcion</th>
-                  <th>fijo</th>
-                  <th>Hora</th>
-                  <th>Km</th>
                   <th>Acciones</th>
                 </tr>
                 </thead>
@@ -65,9 +62,6 @@
                 <tr>
                   <th>Id</th>
                   <th>Descripcion</th>
-                  <th>fijo</th>
-                  <th>Hora</th>
-                  <th>Km</th>
                   <th>Acciones</th>
                 </tr>
                 </tfoot>

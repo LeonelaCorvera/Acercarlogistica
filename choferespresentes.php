@@ -10,7 +10,7 @@
 
 
 		echo "<tr>
-		<td>"."<input type='radio' name='grupo'>"."</td>
+		<td>"."<input type='radio' name='grupo' value='"."$fila[idChofer]"."'>"."</td>
 		<td>"."$fila[idChofer]"."</td>
 		<td>"."$fila[nombre]"." "."$fila[Apellido]"."</td>
 		</tr>";

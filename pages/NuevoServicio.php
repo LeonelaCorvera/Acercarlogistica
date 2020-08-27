@@ -18,36 +18,14 @@
 
             <form action="insertarsericio.php" method="POST">
 
+
               <div class="row">
+
                 <div class="col-xs-3">
                   <label>Nombre:</label>
                   <input type="text" class="form-control" name="des">
                 </div>
-              </div>
 
-<br>
-              <div class="row">
-                <div class="col-xs-2">
-                  <h4>Valor fijo:</h4>
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="fijo" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
-                  </label>
-                </div>
-
-                <div class="col-xs-2">
-                   <h4>Valor por hora:</h4>
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="hora" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
-                  </label>
-                </div>
-
-                <div class="col-xs-2">
-                  <h4>Valor por km:</h4>
-                 <label onclick="document.getElementById('c1').submit();"> 
-                      <input  name="km" type="checkbox"  data-toggle="toggle" data-on="ON" data-off="OFF" data-onstyle="primary" data-offstyle="danger" >
-                  </label>
-                </div>
-                
               </div>
 <br><br>
               <div class="box-footer">

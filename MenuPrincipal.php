@@ -69,8 +69,20 @@
         <li class="header">Menu</li>
         <li class="active treeview">
           
-          <li class="active"><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
+          <li class="active"><a href="index.php?menu=tablero"><i class="fa fa-home"></i> Inicio</a></li>
 
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-map text-yellow"></i>
+            <span>Zonas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?menu=Zonas"><i class="fa fa-list"></i> Zonificar</a></li>
+          </ul>
         </li>
         <li class="treeview">
           <a href="#">
@@ -144,7 +156,7 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-line-chart text-white"></i>
-            <span>Ganaciias</span>
+            <span>Ganancias</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -176,6 +188,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="index.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
+            <li><a href="index.php?menu=Mapa"><i class="fa fa-map"></i> Mapa</a></li>
             <li><a href="index.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
             <li><a href="index.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
           </ul>

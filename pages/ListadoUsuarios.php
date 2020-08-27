@@ -1,4 +1,4 @@
-
+<div id="resp">
 <section class="content-header">
       <h1>
         Ususarios
@@ -115,3 +115,23 @@
   </div>
 </div>
 
+
+<script>
+function sendId(id){  
+  
+        var url = "pages/EditUsuario.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+
+</script>
+
+</div>

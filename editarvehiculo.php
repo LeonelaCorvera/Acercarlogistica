@@ -23,41 +23,31 @@ $seguro = ($_POST['seguro']=='Si') ? 1 : 0 ;
 	foreach($resultado as $fila){
 
 
+		
 		if ($fila['patente']!=$patente) {
 			$tex=" patente='".$patente."'";
-			$param=1;
-		} if ($tex!=0) {
-			$tex.=",";
+			$param++;
 		} if ($fila['marca']!=$marca) {
-			$tex.=" marca=".$marca;
-			$param=2;
-		} if ($tex==2) {
-			$tex.=",";
+			$tex .= ($param==1) ? " ,marca='".$marca."'" : " marca='".$marca."'" ;
+			$param++;
 		} if ($fila['modelo']!=$modelo) {
-			$tex=" modelo=".$modelo;
-			$param=3;
-		}if ($tex==2) {
-			$tex.=",";
-		}if ($fila['idTipoDeVehiculo']!=$tipo) {
-			$tex=" tipo=".$tipo;
-			$param=3;
-		}if ($tex==2) {
-			$tex.=",";
-		}if ($fila['marca']!=$marca) {
-			$tex.=" marca=".$marca;
-			$param=2;
-		} if ($tex==2) {
-			$tex.=",";
-		}if ($fila['anio']!=$anio) {
-			$tex.=",";
-			$tex=" anio=".$anio;
-			$param=1;
+			$tex .= ($param>0) ? " ,modelo='".$modelo."'" : " modelo='".$modelo."'" ;
+			$param++;
+		} if ($fila['anio']!=$anio) {
+			$tex .= ($param>0) ? " ,anio='".$anio."'" : " anio='".$anio."'" ;
+			$param++;
+		} if ($fila['idTipoDeVehiculo']!=$tipo) {
+			$tex .= ($param>0) ? " ,idTipoDeVehiculo='".$tipo."'" : " idTipoDeVehiculo='".$tipo."'" ;
+			$param++;
+		} if ($fila['seguroAlDia']!=$seguro) {
+			$tex .= ($param>0) ? " ,seguroAlDia='".$seguro."'" : " seguroAlDia='".$seguro."'" ;
+			$param++;
 		} if ($tex!="") {
 			$tex.=" where idVehiculo=".$id;
 			$consulta2=$cons.$tex;
 		}
 	}
-var_dump($consulta2);
+
 
 	if ($consulta2!="") {
 		$resultado2=db_query($consulta2);

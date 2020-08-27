@@ -61,26 +61,27 @@
               <div class="row">
                 <div class="col-xs-2">
                   <label>Valor fijo:</label>
-                  <input type="number" class="form-control" name="nombre">
+                  <input type="number" class="form-control" name="fijo" value="0">
                 </div>
 
                 <div class="col-xs-2">
                    <label>Valor por hora:</label>
-                  <input type="number" class="form-control" name="nombre">
+                  <input type="number" class="form-control" name="hora" value="0">
                 </div>
-
+ 
                 <div class="col-xs-2">
                   <label>Valor por km:</label>
-                  <input type="number" class="form-control" name="nombre">
+                  <input type="number" class="form-control" name="km" value="0">
                 </div>
                 
               </div>
+       
+
 <br><br>
               <div class="box-footer">
                 <button type="submit" class="btn btn-info pull-right">Guardar</button>
               </div>
 
-        <!-- /.box-body -->
-       
+        
       </div>
       <!-- /.box -->
