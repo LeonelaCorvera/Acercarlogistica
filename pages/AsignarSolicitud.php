@@ -239,13 +239,15 @@ function cambiar_estado(estado){
            data:{"ids": valoresCheck,"estado": estado}, 
            method : 'post',
            dataType : 'json',
-           success: function(data)             
+           success: function(data)   
            {
-             location.reload();             
+           	alert("hola");
+             //location.reload();             
            },
            error: function(data)             
-           {
-             location.reload();            
+           {	alert(data);
+           	console.log(data);
+             //location.reload();            
            }
          });
 

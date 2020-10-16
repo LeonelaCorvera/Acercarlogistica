@@ -18,11 +18,12 @@
               <div class="row">
                 <div class="col-xs-3">
                   <label>Nombre:</label>
-                  <input type="text" class="form-control" name="lista">
+                  <input type="text" class="form-control" name="lista" required>
                 </div>
 
-                <div class="col-xs-1">
-                 <label onclick="document.getElementById('c1').submit();">Es general:</label>
+                <div class="col-xs-2">
+                  <br>
+                 <label onclick="document.getElementById('c1').submit();">Es general:
                       <input  name="general" id="c1" type="checkbox" checked data-toggle="toggle" data-on="Si" data-off="No" data-onstyle="success" data-offstyle="danger" >
                   </label>
                 </div>
@@ -32,7 +33,7 @@
                 
 
               <div class="box-footer">
-                <button type="button" class="btn btn-warning pull-right" title='Restaurar buckup' data-toggle='modal' data-target='#modalClonarLista'>Clonar lista</button>
+                <button type="button" class="btn btn-warning pull-right" title='clonarLista' data-toggle='modal' data-target='#modalClonarLista'>Clonar lista</button>
                 <button type="submit" class="btn btn-info pull-right">Guardar</button>
               </div>
         </form>
@@ -59,16 +60,13 @@
               <h3 class="box-title">Listas de precios</h3>
             </div>
             <!-- /.box-header -->
-            <div class="box-body">
+            <div class="box-body" >
 
-              <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
-                  </label>
-                </div>
+             
 
+            <div style="overflow-y: scroll; height:360px; width: 98%;">
 
-              <table id="example2" class="table table-bordered table-striped">
+              <table id="example2" class="table table-bordered table-striped" >
                 <thead>
 
                 <tr>
@@ -79,6 +77,8 @@
                   <th>Acciones</th>
                 </tr>
                 </thead>
+
+
                 <tbody>
                   
 
@@ -102,6 +102,9 @@
                 </tr>
                 </tfoot>
               </table>
+
+            </div>
+
             </div>
             
         </div>
@@ -121,32 +124,6 @@
 
 
 
-<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-notify " role="document">
-    <!--Content-->
-    <div class="modal-content text-center">
-      <!--Header-->
-      <div class="modal-header d-flex justify-content-center">
-        <h4>Seguro que desea eliminar esta lista de precios?</h4>
-      </div>
-
-      <!--Body-->
-      <div class="modal-body">
-
-        <i class="fa fa-trash fa-4x animated rotateIn text-red"></i>
-
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer flex-center">
-        <a href="" class="btn btn-default pull-left">Si</a>
-        <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
 
 
 
@@ -201,3 +178,135 @@
     <!--/.Content-->
   </div>
 </div>
+
+
+<div class="modal fade" id="modalEditarLista" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-notify " role="document">
+    <!--Content-->
+    <div class="modal-content text-center">
+      <!--Header-->
+      <div class="modal-header d-flex justify-content-center">
+        <h4>Modificar lista de precio</h4>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+
+        <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                  <label>Nombre:</label>
+                  <input type="text" class="form-control" name="nombre">
+                </div>
+                <div class="col-xs-12">
+                  <br>
+                 <label onclick="document.getElementById('c1').submit();">Es general:
+                      <input  name="general" id="c1" type="checkbox" checked data-toggle="toggle" data-on="Si" data-off="No" data-onstyle="success" data-offstyle="danger" >
+                  </label>
+                </div>
+            </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer flex-center">
+        <a type="button" class="btn  btn-default waves-effect pull-left" data-dismiss="modal">Cancelar</a>
+        <a href="" class="btn btn-primary" >Modificar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+  
+function sendId(id){  
+  
+        var url = "pages/Edit.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+  function eliminar(id){
+
+      Swal.fire({
+      title: '¿Desea deshabilitar esta lista de precios?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, deshabilitar'
+      }).then((result) => {
+        if (result.value) {
+
+          var url = "deletelista.php";
+          $.ajax({                                       
+             url: url,                     
+             data:{"id":id, "estado":0}, 
+             method : 'post',
+             dataType : 'json',
+             success: function(data)     
+             {
+                  exito();
+             },
+             error: function(data)             
+             {
+                  exito();
+             }
+
+           });
+        }
+
+        
+      })
+
+    }  
+
+    function recuperar(id){
+
+      Swal.fire({
+      title: '¿Desea habilitar esta lista de precios?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, habilitar'
+      }).then((result) => {
+        if (result.value) {
+
+          var url = "deletelista.php";
+          $.ajax({                                       
+             url: url,                     
+             data:{"id":id, "estado":1}, 
+             method : 'post',
+             dataType : 'json',
+             success: function(data)     
+             {
+                  exito();
+             },
+             error: function(data)             
+             {
+                  exito();
+             }
+
+           });
+        }
+
+        
+      })
+
+    }  
+
+
+</script>

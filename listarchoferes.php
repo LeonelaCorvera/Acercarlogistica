@@ -2,6 +2,20 @@
 
 include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 
+$permisos[]=session_get("permisos");
+
+if ($permisos[0]["idrol"]==2) {
+    $modificar=true;
+}else{
+	$modificar=false;
+}
+
+if ($permisos[0]["idrol"]==3) {
+    $eliminar=true;
+}else{
+	$eliminar=false;
+}
+
 
 	$consulta="SELECT * FROM acercarlogistca.chofer;";
 	$resultado=db_query($consulta);
@@ -26,10 +40,19 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 			<td>"."$fila[idVehiculo]"."</td>
 			<td>"."$estado"."</td>
 			<td>
-			<a href='index.php?menu=DetalleChofer' class='btn btn-primary'><i class='fa fa-eye'></i></a>
-			<button type='button' value='".$id."' class='btn btn-success' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
-			<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
-			</td>
+			<a href='index.php?menu=DetalleChofer' class='btn btn-primary'><i class='fa fa-eye'></i></a>";
+
+			
+			if ($modificar==true) {
+
+				echo "<button type='button' value='".$id."' class='btn btn-success' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>";
+			}
+			
+			if ($eliminar==true) {
+				echo "<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>";
+			}
+
+			echo "</td>
 			</tr>";
 
 

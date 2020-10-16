@@ -29,10 +29,12 @@
             <div class="box-body">
 
               <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
+                 <label onclick="cambio()">
+                      <input  name="c1" type="checkbox" id="toggle" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger">
                   </label>
                 </div>
+
+
 
               <div style="overflow-y: scroll;height:400px; width: 99%">
               <table id="example" class="table table-bordered table-striped" >
@@ -49,7 +51,7 @@
                   <th>Acciones</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id='lista'> 
                   
 
                   <?php
@@ -75,8 +77,10 @@
                 </tr>
                 </tfoot>
               </table>
+
+            
               </div>
-            </div>
+           
             
         </div>
 
@@ -95,34 +99,46 @@
 
 
 
-<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-notify " role="document">
-    <!--Content-->
-    <div class="modal-content text-center">
-      <!--Header-->
-      <div class="modal-header d-flex justify-content-center">
-        <h4>Seguro que desea deshabilitar este vehiculo?</h4>
-      </div>
 
-      <!--Body-->
-      <div class="modal-body">
-
-        <i class="fa fa-trash fa-4x animated rotateIn text-red"></i>
-
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer flex-center">
-        <a type="button" class="btn btn-default pull-left" onclick="deshabilitar();">Si</a>
-        <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
 
 <script>
+
+function cambio() {
+
+var valor= $('#toggle').prop('checked');
+
+if (valor) {
+
+	var valor2=1;
+
+} else {
+
+	var valor2=0;
+
+}
+
+
+var url = "listarvehiculos.php";
+  $.ajax({                                       
+     url: url,                     
+     data:{"valor": valor2}, 
+     method : 'post',
+     dataType : 'json',
+     success: function(data)             
+     {
+      $('#lista').html(data);
+     },
+     error: function(data)             
+     {
+        $('#lista').html(data);
+     }
+
+   });
+	 
+    
+};
+
+
 function sendId(id){  
   
         var url = "pages/EditVehiculo.php";
@@ -150,6 +166,41 @@ function deshabilitar(){
            }
        });
 }
+
+function eliminar(id){
+
+      Swal.fire({
+      title: '¿Desea eliminar esta vehiculo?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, eliminar'
+      }).then((result) => {
+        if (result.value) {
+
+          var url = "deletevehiculo.php";
+          $.ajax({                                       
+             url: url,                     
+             data:{"id":id}, 
+             method : 'post',
+             dataType : 'json',
+             success: function(data)     
+             {
+                  exito();
+             },
+             error: function(data)             
+             {
+                  exito();
+             }
+
+           });
+        }
+
+        
+      })
+
+    }  
 </script>
 
 

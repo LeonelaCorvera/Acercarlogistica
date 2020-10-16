@@ -19,18 +19,27 @@ if (!empty($_POST['usuario']) or !empty($_POST['password'])) {
 		$resultado=db_query($consulta);
 		//si hay algun usuario con esa contrasena
 		if(count($resultado)==1){
+
 			session_set("usuario",$usuario);
+			$user=session_get("usuario");
+			$consulta2="SELECT idrol FROM usuario_perfil where idusuario='".$user."';";
+			$resultado2=db_query($consulta2);
+			$array= array();
+
+			foreach ($resultado2 as $fila ) {
+
+					
+				array_push ( $array , $fila );
+				
+			}
+
+			session_set("permisos",$array);
 			session_var_unset("error");
 			header("Location: index.php");
 		}else{
-			echo "<p id='error'>el usuario o contraseña son incorrectos</p>";
-			echo "<br><a href='index.php'>>>Volver a inicio<<</a><br><br>";
+			header("location:pages/Login.php");
 		}
-	}else{
-			echo "<p id='error'>Debe ingresar un nombre de usuario y contraseña para ingresar!</p>";
-			echo "<br><a href='index.php'>>>Volver a inicio<<</a><br><br>";
 	}
-
 
 
 ?>

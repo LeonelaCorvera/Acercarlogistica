@@ -76,7 +76,7 @@
 <?php
 
    include('listartablero.php');
-
+var_dump( session_get("permisos"));
 
  ?>
 
@@ -190,10 +190,12 @@ var cho=0;
                    dataType : 'json',
                    success: function(data)             
                    {
+                    enviaje(cho);
                      location.reload();             
                    },
                    error: function(data)             
                    {
+                    enviaje(cho);
                      location.reload();            
                    }
                  });
@@ -203,6 +205,32 @@ var cho=0;
   function llego(chofer){
 
     var url = "llego.php";
+                $.ajax({                                       
+                   url: url,                     
+                   data:{"chofer": chofer}, 
+                   method : 'post',
+                   dataType : 'json',
+                   success: function(data)             
+                   {
+                     
+                     location.reload();             
+                   },
+                   error: function(data)             
+                   {
+                     
+                     location.reload();            
+                   }
+                 });
+
+                var user = document.getElementsByName("usuario");
+                alert(user);
+
+
+  }   
+
+    function enviaje(chofer){
+
+    var url = "enviaje.php";
                 $.ajax({                                       
                    url: url,                     
                    data:{"chofer": chofer}, 
@@ -222,7 +250,8 @@ var cho=0;
                 alert(user);
 
 
-  }         
+  }       
+
   function activar(chofer){
 
     var url = "activar.php";

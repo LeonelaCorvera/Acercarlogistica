@@ -3,21 +3,26 @@
 include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 
 
-	$consulta="SELECT * FROM acercarlogistca.listadeprecios;";
+	$consulta="SELECT * FROM listadeprecios;";
 	$resultado=db_query($consulta);
 
 
 	foreach($resultado as $fila){
 
+		$id = (isset($fila['id'])) ? $fila['id'] : 0 ;
+
+
 		if ($fila['activa']==1) {
 			$estado='<span class="badge bg-green">Habilitado</span>';
+			$boton='<button type="button" value="'.$id.'" class="btn btn-danger" onclick="eliminar(this.value,0)";><i class="fa fa-trash"></i></button>';
 		}else{
 			$estado='<span class="badge bg-red">Inhabilitado</span>';
+			$boton='<button type="button" value="'.$id.'" class="btn btn-success" onclick="recuperar(this.value,1)";><i class="fa fa-check"></i></button>';
 		}
 		if ($fila['esGeneral']==1) {
-			$general='<span class="badge bg-green"><i class="fa fa-check bg-green"></span>';
+			$general='<span ><i class="fa fa-check"></span>';
 		}else{
-			$general='<span class="badge bg-red"><i class="fa fa-times"></span>';
+			$general='<span ><i class="fa fa-times"></span>';
 		}
 		
 
@@ -28,8 +33,8 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 		<td>".$general."</td>
 		<td>".$estado."</td>
 		<td>
-		<a href='index.php?menu=EditChofer' class='btn btn-success'><i class='fa fa-edit'></i></a>
-		<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
+		<button type='button' value='".$id."' class='btn btn-primary' title='clonarLista' data-toggle='modal' data-target='#modalEditarLista'><i class='fa fa-edit'></i></button>
+		".$boton."
 		</td>
 		</tr>";
 

@@ -1,8 +1,4 @@
 
-<?php
-
-echo "
-
 <link href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css' rel='stylesheet'>
 <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
 <link href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css' rel='stylesheet' />
@@ -23,7 +19,13 @@ echo "
         </div>
         <!-- /.box-header -->
 
-     <div class='box-body'>";
+     <div class='box-body'>
+
+<?php
+
+
+
+
 
 
 include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
@@ -42,27 +44,64 @@ foreach($resultado as $fila){
               <div class='row'>
                 <div class='col-xs-3'>
                   <label>Nombre:</label>
-                  <input type='text' class='form-control' name='des' value="."$fila[descripcion]".">
+                  <input type='text' class='form-control' id='des' name='des' value="."$fila[descripcion]".">
                 </div>
                 <div class='col-xs-1'>
-                  <input type='hidden' class='form-control' name='id' value=".$id.">
+                  <input type='hidden' class='form-control' id='id' name='id' value=".$id.">
                 </div>
-              </div>
+              </div>";
+
+
+
+}
+
+?>
+
 
 
               <br><br>
 
               <div class='box-footer'>
-                <button type='submit' class='btn btn-info pull-right'>Modificar</button>
+                <button type='button' class='btn btn-info pull-right' onclick="modificar()">Modificar</button>
               </div>
             </form>
         <!-- /.box-body -->
        
       </div>
       <!-- /.box -->
-</section>";
+</section>
 
 
+<script type="text/javascript">
+
+
+function modificar(){
+
+
+
+  var des=$("#des").val();
+  var id=$("#id").val();
+
+  var url = "editarservicio.php";
+  $.ajax({                                       
+     url: url,                     
+     data:{"des": des,"id":id}, 
+     method : 'post',
+     dataType : 'json',
+     success: function(data)     
+     {
+          exito();
+     },
+     error: function(data)             
+     {
+          exito();
+     }
+
+   });
 }
 
-?>
+
+
+    
+
+</script>

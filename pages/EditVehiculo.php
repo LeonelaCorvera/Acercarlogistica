@@ -43,23 +43,23 @@ foreach($resultado as $fila){
               <div class='row'>
                 <div class='col-xs-1'>
                   <label>Id:</label>
-                  <input type='text' class='form-control' name='id' value='"."$fila[idVehiculo]"."' >
+                  <input type='text' class='form-control' name='id' id='id' value='"."$fila[idVehiculo]"."' >
                 </div>
                 <div class='col-xs-3'>
                   <label>Patente:</label>
-                  <input type='text' class='form-control' name='patente' value='"."$fila[patente]"."'>
+                  <input type='text' class='form-control' name='patente' id='patente' value='"."$fila[patente]"."'>
                 </div>
                 <div class='col-xs-3'>
                   <label>Marca:</label>
-                  <input type='text' class='form-control' name='marca' value='"."$fila[marca]"."'>
+                  <input type='text' class='form-control' name='marca' id='marca' value='"."$fila[marca]"."'>
                 </div>
                  <div class='col-xs-3'>
                   <label>Modelo:</label>
-                  <input type='text' class='form-control' name='modelo' value='"."$fila[modelo]"."'>
+                  <input type='text' class='form-control' name='modelo' id='modelo' value='"."$fila[modelo]"."'>
                 </div>
                  <div class='col-xs-2'>
                   <label>Año:</label>
-                  <input type='text' class='form-control' name='anio' value='"."$fila[anio]"."'>
+                  <input type='text' class='form-control' name='anio' id='anio' value='"."$fila[anio]"."'>
                 </div>
             </div'
 <br>
@@ -67,7 +67,7 @@ foreach($resultado as $fila){
               <div class='col-xs-3'>
                 <div class='form-group'>
                   <label>Tipo de vehiculo:</label>
-                  <select class='form-control' name='tipo'>";
+                  <select class='form-control' name='tipo' id='tipo'>";
                 
                           $consulta2="SELECT * FROM tipodevehiculo where idTipoDeVehiculo="."$fila[idTipoDeVehiculo]".";";
                           $resultado2=db_query($consulta2);
@@ -91,24 +91,64 @@ foreach($resultado as $fila){
               <div class='col-xs-2'>
                 <div class='form-group'>
                   <label>Seguro al dia:</label>
-                  <select class='form-control' name='seguro'>
+                  <select class='form-control' name='seguro' id='seguro'>
                     <option>".$val1."</option>
                     <option>".$val2."</option>
                   </select>
                 </div>
               </div>
             </div>
-            <br>
-                
-
-               <div class='box-footer'>
-                <button type='submit' class='btn btn-info pull-right'>Modificar</button>
-              </div>
-        </form>
-       
-      </div>";
+            <br>";
 
   }
 
 
 ?>
+
+        <div class='box-footer'>
+                <button type='button' class='btn btn-info pull-right' onclick="modificar()">Modificar</button>
+              </div>
+        </form>
+       
+      </div>
+
+
+
+<script type="text/javascript">
+
+
+function modificar(){
+
+
+
+  var patente=$("#patente").val();
+  var id=$("#id").val();
+  var modelo=$("#modelo").val();
+  var marca=$("#marca").val();
+  var anio=$("#anio").val();
+  var tipo=$("#tipo").val();
+  var seguro=$("#seguro").val();
+
+  var url = "editarvehiculo.php";
+  $.ajax({                                       
+     url: url,                     
+     data:{"patente": patente,"id":id, "modelo":modelo, "marca":marca, "anio":anio, "tipo":tipo, "seguro":seguro}, 
+     method : 'post',
+     dataType : 'json',
+     success: function(data)     
+     {
+          exito();
+     },
+     error: function(data)             
+     {
+          exito();
+     }
+
+   });
+}
+
+
+
+    
+
+</script>

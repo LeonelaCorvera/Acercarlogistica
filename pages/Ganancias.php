@@ -96,6 +96,7 @@
 <script>
 
   function consulta(){  
+   
 
   var desde=$("#desde").val();
   var hasta=$("#hasta").val();

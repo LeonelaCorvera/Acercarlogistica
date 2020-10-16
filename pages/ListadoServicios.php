@@ -86,32 +86,7 @@
 
 
 
-<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-notify " role="document">
-    <!--Content-->
-    <div class="modal-content text-center">
-      <!--Header-->
-      <div class="modal-header d-flex justify-content-center">
-        <h4>Seguro que desea deshabilitar este servicio?</h4>
-      </div>
 
-      <!--Body-->
-      <div class="modal-body">
-
-        <i class="fa fa-trash fa-4x animated rotateIn text-red"></i>
-
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer flex-center">
-        <a href="" class="btn btn-default pull-left">Si</a>
-        <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
 
 <script type="text/javascript">
 
@@ -129,6 +104,41 @@ function sendId(id){
            }
        });
 }
+
+  function eliminar(id){
+
+      Swal.fire({
+      title: '¿Desea eliminar esta servicio?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, eliminar'
+      }).then((result) => {
+        if (result.value) {
+
+          var url = "deleteservicio.php";
+          $.ajax({                                       
+             url: url,                     
+             data:{"id":id}, 
+             method : 'post',
+             dataType : 'json',
+             success: function(data)     
+             {
+                  exito();
+             },
+             error: function(data)             
+             {
+                  exito();
+             }
+
+           });
+        }
+
+        
+      })
+
+    }  
 
 
 </script>

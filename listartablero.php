@@ -47,11 +47,15 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 
 		            <div class='info-box-content'>
 		              <span class='info-box-text'>"."$fila[idChofer]"." - "."$fila[nombre]"." "."$fila[Apellido]"."</span>
-		              <span class='info-box-text'>"."$fila[descripcion]"."</span>
-		              <button type='button' value='"."$fila[idChofer]"."' class='btn btn-light' data-toggle='modal' data-target='#myModal'  onclick='hola("."$fila[idChofer]".")' style='color:black';><span>
+		              <span class='info-box-text'>"."$fila[descripcion]"."</span>";
+
+		              if ($fila['disponibilidad']==1) {
+		              	 echo "<button type='button' value='"."$fila[idChofer]"."' class='btn btn-light' data-toggle='modal' data-target='#myModal'  onclick='hola("."$fila[idChofer]".")' style='color:black';><span>
 		                 "."$fila[cant]"." viajes
 		                <i class='fa fa-arrow-circle-right'></i>
 		                  </span></button>";
+		              }
+		            
 
 
 		                  if ($fila['disponibilidad']==(-1)){
@@ -101,10 +105,6 @@ include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database_min.php';
 		            <div class='info-box-content'>
 		              <span class='info-box-text'>"."$fila[idChofer]"." - "."$fila[nombre]"." "."$fila[Apellido]"."</span>
 		              <span class='info-box-text'>"."$fila[descripcion]"."</span>
-		              <button type='button' value='"."$fila[idChofer]"."' class='btn btn-light' data-toggle='modal' data-target='#myModal'  onclick='hola("."$fila[idChofer]".")' style='color:black';><span>
-		                 "."$fila[cant]"." viajes
-		                <i class='fa fa-arrow-circle-right'></i>
-		                  </span></button>
 
 		                <button type='button' class='btn btn-danger btn-circle pull-right' onclick='activar("."$fila[idChofer]".")'>
 			               <i class='fa fa-check'></i>

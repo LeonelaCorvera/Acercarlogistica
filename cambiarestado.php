@@ -48,6 +48,5 @@ $estado= $_POST['estado'];
 
 	$resultado=db_query($consulta);
 
-	header("Location: index.php?menu=AsignarSolicitud");
 
 ?>

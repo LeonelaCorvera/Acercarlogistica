@@ -38,11 +38,11 @@
 
     <form action="../ingreso.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Usuario" name="usuario" id="usuario">
+        <input type="text" class="form-control" placeholder="Usuario" name="usuario" id="usuario" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password">
+        <input type="password" class="form-control" placeholder="Contraseña" name="password" id="password" required>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
