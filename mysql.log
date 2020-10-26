@@ -5601,3 +5601,69 @@ SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.i
 				order by fecha_ultima_disponibilidad asc
 2020-10-25 22:39:37
 SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0 and estado='PENDIENTE';
+2020-10-26 04:25:21
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
+2020-10-26 04:25:21
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0 and estado='PENDIENTE';
+2020-10-26 04:25:57
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
+2020-10-26 04:25:57
+SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0 and estado='PENDIENTE';
+2020-10-26 04:26:01
+SELECT * FROM acercarlogistca.servicio;
+2020-10-26 04:26:49
+SELECT * FROM acercarlogistca.servicio;
+2020-10-26 04:43:00
+SELECT * FROM acercarlogistca.servicio;
+2020-10-26 04:43:40
+SELECT * FROM acercarlogistca.servicio;
+2020-10-26 04:43:58
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
+2020-10-26 04:49:11
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
+2020-10-26 04:49:20
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
+2020-10-26 04:49:31
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
