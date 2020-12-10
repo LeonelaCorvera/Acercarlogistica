@@ -58,11 +58,11 @@ if(session_get('rol')!=3 and session_get('rol')!=null){
 <?php
 
 
-if(session_get('rol')!=3 and session_get('rol')!=null){
+//if(session_get('rol')!=3 and session_get('rol')!=null){
   
-include('listartablero.php');
+//include('listartablero.php');
 
-}
+//}
 
 
 
