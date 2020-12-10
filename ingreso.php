@@ -1,7 +1,7 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\session.php';
-include 'C:\xampp\htdocs\AdminLTE\AdminLTE-2.4.10\funciones\database.php';
+include 'funciones\session.php';
+include 'funciones\database.php';
 
 
 $usuario= $_POST['usuario'];
