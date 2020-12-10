@@ -15227,3 +15227,14 @@ SELECT v.*,
 				left join chofer ch on v.Chofer_idChofer=ch.idChofer 
 				left join cliente cl on v.idClliente=cl.idcliente
 				left join tipodevehiculo tv on v.tipoVehiculo=tv.idTipoDeVehiculo  where  v.estado='ASIGNADO' and Servicio_idServicio=1 and comisionPaga=1
+2020-12-10 05:13:03
+
+			SELECT *
+			FROM usuario
+			WHERE idusuario='leito' and contrasena='7110eda4d09e062aa5e4a390b0a572ac0d2c0220';
+		
+2020-12-10 05:13:28
+
+					SELECT *
+					FROM usuario
+					WHERE idusuario='leito';
