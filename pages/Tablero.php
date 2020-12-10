@@ -19,7 +19,7 @@
 
 <?php
 
-
+/*
 if(session_get('rol')!=3 and session_get('rol')!=null){
   
   echo "<h1>
@@ -40,7 +40,7 @@ if(session_get('rol')!=3 and session_get('rol')!=null){
 }
 
 
-
+*/
 
 
  ?>
