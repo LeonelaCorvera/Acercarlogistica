@@ -14,9 +14,9 @@
    crossorigin=""></script>
 
    <!-- bootstrap datepicker -->
-<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
 
 <style type="text/css">
 
@@ -83,7 +83,7 @@
 
                           <?php
 
-                            include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                            include 'funciones\database_min.php';
                             include('listarviajesasignados.php');
 
 

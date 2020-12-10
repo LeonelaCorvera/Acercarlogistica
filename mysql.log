@@ -15324,3 +15324,24 @@ SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.i
 				where c.flagBaja=1
 				group by c.idChofer
 				order by fecha_ultima_disponibilidad asc
+2020-12-10 20:15:58
+
+			SELECT *
+			FROM usuario
+			WHERE idusuario='leito' and contrasena='667df7351fd46de4d629a131f6ee98f70056f5f9';
+		
+2020-12-10 20:16:10
+
+			SELECT *
+			FROM usuario
+			WHERE idusuario='leito' and contrasena='7110eda4d09e062aa5e4a390b0a572ac0d2c0220';
+		
+2020-12-10 20:16:11
+SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant
+				FROM chofer c 
+				join vehiculo v on c.idVehiculo=v.idVehiculo
+				join tipodevehiculo t on v.idTipoDeVehiculo=t.idTipoDeVehiculo
+				left join viaje vi on vi.Chofer_idChofer=c.idChofer
+				where c.flagBaja=1
+				group by c.idChofer
+				order by fecha_ultima_disponibilidad asc
