@@ -1,7 +1,7 @@
 
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
  $chofer= ( empty($_POST['chofer']) ) ? NULL : $_POST['chofer'];
 

@@ -2,7 +2,7 @@
 
 
 
-	$consulta="SELECT * FROM acercarlogistca.viaje where Chofer_idChofer!=0;";
+	$consulta="SELECT * FROM viaje where Chofer_idChofer!=0;";
 	$resultado=db_query($consulta);
 
 	$color='';

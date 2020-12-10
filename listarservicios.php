@@ -1,8 +1,8 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
-	$consulta="SELECT * FROM acercarlogistca.servicio;";
+	$consulta="SELECT * FROM servicio;";
 	$resultado=db_query($consulta);
 
 

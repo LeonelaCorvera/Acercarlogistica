@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 $desde = (isset($_POST['desde'])) ? $_POST['desde'] : "0000-00-00" ;
 $hasta = (isset($_POST['hasta'])) ? $_POST['hasta'] : "0000-00-00" ;

@@ -15,7 +15,7 @@ echo "<section class='content'>
 
      <div class='box-body'>";
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
 $id =$_POST['id']; 

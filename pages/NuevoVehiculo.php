@@ -49,9 +49,9 @@
                     <option value=''>Seleccionar</option>
                     <?php
 
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                        include 'funciones\database_min.php';
 
-                          $consulta="SELECT * FROM acercarlogistca.tipodevehiculo;";
+                          $consulta="SELECT * FROM tipodevehiculo;";
                           $resultado=db_query($consulta);
 
                           foreach($resultado as $fila){

@@ -42,9 +42,9 @@
                     <option value='0'>Seleccionar</option>
                       <?php
 
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                        include 'funciones\database_min.php';
 
-                          $consulta="SELECT * FROM acercarlogistca.vehiculo;";
+                          $consulta="SELECT * FROM vehiculo;";
                           $resultado=db_query($consulta);
 
                           foreach($resultado as $fila){

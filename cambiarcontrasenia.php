@@ -1,7 +1,7 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database.php';
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\session.php';
+include 'funciones\database.php';
+include 'funciones\session.php';
 
 $contActual= $_POST['contActual'];
 $contNueva= $_POST['contNueva'];

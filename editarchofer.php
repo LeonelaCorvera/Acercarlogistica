@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 $id= $_POST['id']; 
 $nombre= $_POST['nombre']; 

@@ -1,8 +1,8 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\session.php';
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database.php';
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\sendMail.php';
+include 'funciones\session.php';
+include 'funciones\database.php';
+include 'funciones\sendMail.php';
 
 
 $email= addslashes($_POST['email']);

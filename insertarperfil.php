@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database.php';
+include 'funciones\database.php';
 
 $nombre= $_POST['nombre'];
 $tipo= $_POST['tipo'];

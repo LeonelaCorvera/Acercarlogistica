@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database.php';
+include 'funciones\database.php';
 
 $msg='';
 if(!empty($_GET['code']) && isset($_GET['code']))

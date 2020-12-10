@@ -2,7 +2,7 @@
 
 
 
-	$consulta="SELECT * FROM acercarlogistca.viaje where Chofer_idChofer=0 and estado='PENDIENTE';";
+	$consulta="SELECT * FROM viaje where Chofer_idChofer=0 and estado='PENDIENTE';";
 	$resultado=db_query($consulta);
 
 

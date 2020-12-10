@@ -1,12 +1,12 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTEAcercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
-	$consulta="SELECT * FROM acercarlogistca.cllienteempresa;";
+	$consulta="SELECT * FROM cllienteempresa;";
 	$resultado=db_query($consulta);
 
- echo " <table id="example1" class="table table-bordered table-striped">
+ echo " <table id='example1' class='table table-bordered table-striped'>
                 <thead>
                 <tr>
                   <th>Id</th>

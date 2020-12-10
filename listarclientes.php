@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 	
 	$consulta="SELECT c.*,l.descripcion FROM cliente c left join listadeprecios l on c.listaPrecio=l.id;";

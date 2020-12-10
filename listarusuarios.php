@@ -1,9 +1,9 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
-	$consulta="SELECT u.*,p.descripcion FROM acercarlogistca.usuario u join perfil p on u.id_perfil=p.idPerfil";
+	$consulta="SELECT u.*,p.descripcion FROM usuario u join perfil p on u.id_perfil=p.idPerfil";
 	$resultado=db_query($consulta);
 
 

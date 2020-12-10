@@ -1,6 +1,6 @@
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 $fecha_carga_desde = ($_POST['fecha_carga_desde'])!=""? $_POST['fecha_carga_desde'] : "0000-00-00" ;
 $fecha_carga_hasta = ($_POST['fecha_carga_hasta'])!=""? $_POST['fecha_carga_hasta'] : "0000-00-00" ;

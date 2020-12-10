@@ -16,7 +16,7 @@ echo "<section class='content'>
      <div class='box-body'>";
 
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
 $json =$_POST['id']; 
@@ -70,7 +70,7 @@ foreach($resultado as $fila){
                             echo "<option value='".$fila2[idTipoDeVehiculo]."'>(".$fila2[idTipoDeVehiculo].")-".$fila2[descripcion]."</option>";
                           }
 
-                          $consulta3="SELECT * FROM acercarlogistca.tipodevehiculo;";
+                          $consulta3="SELECT * FROM tipodevehiculo;";
                           $resultado3=db_query($consulta3);
 
                           foreach($resultado3 as $fila3){

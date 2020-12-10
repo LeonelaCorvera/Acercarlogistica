@@ -81,7 +81,7 @@
                     <option value=''>Seleccionar</option>
                       <?php
 
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                        include 'funciones\database_min.php';
 
                           $consulta="SELECT * FROM cliente where estado=1;";
                           $resultado=db_query($consulta);

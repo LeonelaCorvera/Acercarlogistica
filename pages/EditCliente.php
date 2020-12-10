@@ -15,7 +15,7 @@ echo "<section class='content'>
 
        
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
 $json =$_POST['id']; 
@@ -77,7 +77,7 @@ foreach($resultado as $fila){
                   <select class='form-control' name='lista' required  value='"."$fila[listaPrecio]"."'>";
                       
 
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                        include 'funciones\database_min.php';
 
                           $consulta="SELECT * FROM listadeprecios;";
                           $resultado=db_query($consulta);

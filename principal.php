@@ -1,6 +1,6 @@
 <?php
 
-  include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\session.php';
+  include 'funciones\session.php';
 
   $rol=session_get('rol');
   $menuRecepcionista = array("Vencimientos", "ListadoChoferes", "ListadoClientes", "NuevoCliente", "Comisiones", "AsignarSolicitud", "ListadoSolicitudes", "NuevaSolicitud", "ListadoUsuarios", "NuevoUsuario", "tablero");

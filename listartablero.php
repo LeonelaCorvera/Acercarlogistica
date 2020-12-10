@@ -1,7 +1,7 @@
 
 <?php
 
-include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+include 'funciones\database_min.php';
 
 
 	$consulta="SELECT c.idChofer,c.nombre,c.Apellido,c.disponibilidad,t.descripcion, count(vi.idViaje) as cant

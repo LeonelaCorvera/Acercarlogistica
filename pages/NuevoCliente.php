@@ -56,7 +56,7 @@
                     <option value='0'>Seleccionar</option>
                       <?php
 
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
+                        include 'funciones\database_min.php';
 
                           $consulta="SELECT * FROM listadeprecios;";
                           $resultado=db_query($consulta);
