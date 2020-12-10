@@ -26,9 +26,8 @@ include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min
 			<td>"."$fila[idVehiculo]"."</td>
 			<td>"."$estado"."</td>
 			<td>
-			<a href='index.php?menu=DetalleChofer' class='btn btn-primary'><i class='fa fa-eye'></i></a>
-			<button type='button' value='".$id."' class='btn btn-success' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
-			<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
+			<button type='button' value='".$id."' class='btn btn-primary' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
+			<button type='button' value='".$id."' class='btn btn-danger' onclick='deshabilitar(this.value)'; ><i class='fa fa-trash'></i></button>
 			</td>
 			</tr>";
 

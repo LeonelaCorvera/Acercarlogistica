@@ -14,6 +14,6 @@ $lista= $_POST['lista'];
 	VALUES('".$razon."','".$contacto."',".$doc.",'".$direccion."','".$telefono."','".$tipo."',".$lista.",'PENDIENTE');";
 	$resultado=db_query($consulta);
 
-	header("Location: index.php?menu=NuevoCliente");
+	header("Location: principal.php?menu=NuevoCliente");
 
 ?>

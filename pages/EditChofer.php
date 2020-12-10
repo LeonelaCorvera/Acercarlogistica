@@ -64,6 +64,32 @@ foreach($resultado as $fila){
               </div>
             </div>
             <br>
+
+            <br>           
+
+            <div class='row'>
+              <div class='col-xs-12'>
+                <h4>Venciemientos</h4>
+                <hr/> 
+              </div>
+            </div>
+
+
+
+            <div class='row'>
+
+              <div class='col-xs-3'>
+                  <label>Licencia:</label>
+                  <input type='date' class='form-control' name='licencia' value='"."$fila[licencia]"."'>
+              </div>
+
+              <div class='col-xs-3'>
+                  <label>Cedula:</label>
+                  <input type='date' class='form-control' name='cedula' value='"."$fila[cedula]"."'>
+              </div>
+
+
+            </div>
                 
 
               <div class='box-footer'>

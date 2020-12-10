@@ -10,31 +10,17 @@
 		                </button>
 		              </div>
 		            </div>
-		            <!-- /.box-header -->
+		           
 		            <div class="box-body">
-
-		            	<div class="form-group" style="width: 89%;">
-				            <label>Tipo de vehiculo:</label>
-				            <select class="form-control select2" id="yourSelect" name="tipo">
-				               <option value='0'>Seleccionar</option>
-			                      <?php
-
-			                      	include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
-
-			                          $consulta="SELECT * FROM tipodevehiculo;";
-			                          $resultado=db_query($consulta);
-
-			                          foreach($resultado as $fila){
-
-			                            echo "<option value='".$fila[idTipoDeVehiculo]."'>".$fila[descripcion]."</option>";
-			                          }
-			                      ?>
-				            </select>
+		        
+		             	<div class="form-group" style="width: 95%;">
+	
+				            
 			             </div>
 
 		              <div class="row">
 		                
-		              	<div class="box-body chat" style="overflow-y: scroll; height:360px; width: 98%;">
+		              	<div class="box-body chat" style="overflow-y: scroll; height:418px; width: 98%;">
 
 		              		<table  class="table table-bordered table-striped">
 			                <thead>
@@ -49,8 +35,8 @@
 
 				                <div id="lista">
 					                  <?php
-
 					                  	
+					                  	include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
 					                    include('choferespresentes.php');
 
 
@@ -241,11 +227,35 @@ function cambiar_estado(estado){
            dataType : 'json',
            success: function(data)             
            {
-             location.reload();             
+              Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+                         
            },
            error: function(data)             
            {
-             location.reload();            
+               Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+                         
            }
          });
 
@@ -267,21 +277,50 @@ function reasignar(){
 	});
 
 
-	var url = "reasignar.php";
+
+  Swal.fire({
+      title: '¿Esta seguro que desea reasignar este viaje?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si reasignar!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        var url = "reasignar.php";
         $.ajax({                                       
            url: url,                     
            data:{"ids": valoresCheck,"chofer": chofer}, 
            method : 'post',
            dataType : 'json',
-           success: function(data)             
-           {
-             location.reload();             
-           },
            error: function(data)             
            {
-             location.reload();            
+           Swal.fire({
+            title: '¡El viaje se reasigno con exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+             
+                        
            }
-         });
+       
+
+
+
+       });
+        
+        
+      }
+    })
+  
 
 }
 
@@ -309,11 +348,34 @@ function asignar(){
            dataType : 'json',
            success: function(data)             
            {
-             location.reload();             
+               Swal.fire({
+            title: '¡El / Los viaje se asignaron con exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+                       
            },
            error: function(data)             
            {
-             location.reload();            
+                 Swal.fire({
+            title: '¡El / Los viaje se asignaron con exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })          
            }
          });
 

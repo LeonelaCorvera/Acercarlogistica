@@ -9,12 +9,12 @@ $chofer= $_POST['chofer'];
 	$resultado=db_query($consulta);
 
 	$consulta2="UPDATE chofer
-				SET disponibilidad = 1,
-				fecha_ultima_disponibilidad = now(),
-				WHERE idChofer = ".$chofer.";";
+				SET disponibilidad = -1,
+				fecha_ultima_disponibilidad = now()
+				WHERE idChofer in ( ".$chofer.");";
 
 	$resultado2=db_query($consulta2);
 
-	header("Location: index.php?menu=AsignarSolicitud");
+	header("Location: principal.php?menu=AsignarSolicitud");
 
 ?>

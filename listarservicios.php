@@ -10,15 +10,19 @@ include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min
 
 		$id = (isset($fila['idServicio'])) ? $fila['idServicio'] : 0 ;
 
-
+		if ($fila['estado']==1) {
+			$estado='<span class="badge bg-green">Habilitado</span>';
+		}else{
+			$estado='<span class="badge bg-red">Inhabilitado</span>';
+		}
 
 		echo "<tr>
 		<td>"."$fila[idServicio]"."</td>
 		<td>"."$fila[descripcion]"."</td>
+		<td>".$estado."</td>
 		<td>
-			<a href='index.php?menu=DetalleServicio' class='btn btn-primary'><i class='fa fa-eye'></i></a>
-			<button type='button' value='".$id."' class='btn btn-success' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
-			<button type='button' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
+			<button type='button' value='".$id."' class='btn btn-primary' onclick='sendId(this.value)';><i class='fa fa-edit'></i></button>
+			<button type='button' value='".$id."' class='btn btn-danger'  onclick='deshabilitar(this.value)';><i class='fa fa-trash'></i></button>
 		</td>
 		</tr>";
 

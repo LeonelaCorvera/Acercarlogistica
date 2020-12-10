@@ -8,6 +8,8 @@ $apellido= $_POST['apellido'];
 $dni = $_POST['dni'];
 $telefono = $_POST['telefono'];
 $vehiculo = $_POST['vehiculo'];
+$licencia = $_POST['licencia'];
+$cedula = $_POST['cedula'];
 
 
 	$consulta="select * from chofer where idChofer=".$id.";";
@@ -37,6 +39,12 @@ $vehiculo = $_POST['vehiculo'];
 		} if ($fila['idVehiculo']!=$vehiculo) {
 			$tex .= ($param>0) ? " ,idVehiculo='".$vehiculo."'" : " idVehiculo='".$vehiculo."'" ;
 			$param++;
+		} if ($fila['licencia']!=$licencia) {
+			$tex .= ($param>0) ? " ,licencia='".$licencia."'" : " licencia='".$licencia."'" ;
+			$param++;
+		}if ($fila['cedula']!=$cedula) {
+			$tex .= ($param>0) ? " ,cedula='".$cedula."'" : " cedula='".$cedula."'" ;
+			$param++;
 		} if ($tex!="") {
 			$tex.=" where idChofer=".$id;
 			$consulta2=$cons.$tex;
@@ -49,6 +57,6 @@ $vehiculo = $_POST['vehiculo'];
 	} 
 
 
-	header("Location: index.php?menu=ListadoChoferes");
+	header("Location: principal.php?menu=ListadoChoferes");
 
 ?>

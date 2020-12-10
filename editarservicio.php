@@ -25,6 +25,6 @@ $id= $_POST['id'];
 	}
 
 
-	header("Location: index.php?menu=ListadoServicios");
+	header("Location: principal.php?menu=ListadoServicios");
 
 ?>

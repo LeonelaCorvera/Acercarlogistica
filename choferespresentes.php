@@ -2,7 +2,7 @@
 
 
 
-	$consulta="SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1";
+	$consulta="SELECT idChofer,nombre,Apellido FROM acercarlogistca.chofer where flagBaja=1 and disponibilidad=1";
 	$resultado=db_query($consulta);
 
 

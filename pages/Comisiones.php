@@ -10,7 +10,7 @@
       <div class="col-xs-4">
         <label>Chofer:</label>
         <select class="form-control select2" name="chofer" id="chofer">
-           <option>Seleccionar</option>
+           <option value="0">Seleccionar</option>
            <?php
 
             include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
@@ -29,8 +29,8 @@
 
 <br>
         <div class="box-footer" >
-           <button type="button" class="btn btn-success pull-right">Imprimir</button>
-           <button type="button" class="btn btn-warning pull-right">Exportar</button>
+           <button type="button" class="btn btn-success pull-right" onclick="javascript:window.imprimirDIV('ID_DIV');">Imprimir</button>
+           <button type="button" class="btn btn-warning pull-right" onclick="exportTableToExcel('tblData', 'Comisiones')">Exportar</button>
            <button type="button" class="btn btn-primary pull-right" onclick="consulta();">Buscar comisiones pendientes</button>
         </div>
   </div>
@@ -42,15 +42,12 @@
         <div class="box-header with-border">
           <h3 class="box-title"> Detalle de viajes</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-          </div>
-        </div>
+          
         <!-- /.box-header -->
 
-     <div class="box-body">
+     <div class="box-body" id="ID_DIV">
 
-      <table id="ejemplo" class="table table-bordered table-striped">
+      <table id="tblData" class="table table-bordered table-striped" border="1">
                 <thead>
 
                 <tr>
@@ -70,7 +67,7 @@
                 <tfoot>
                 <tr>
                  <th colspan="6">Total</th>
-                  <th>2200</th>
+                  <th>0</th>
                   
                 </tr>
                 </tfoot>
@@ -79,39 +76,11 @@
        
       </div>
       <div class="box-footer" >
-           <button type='button' class="btn btn-primary pull-right"  data-toggle='modal' data-target='#modalConfirmDelete'>Cobrar</button>
+           <button type='button' class="btn btn-primary pull-right" onclick="cobrar();">Cobrar</button>
       </div>
      
 </section>
 
-
- <!-- /.Modal -->
-<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-notify " role="document">
-    <!--Content-->
-    <div class="modal-content text-center">
-      <!--Header-->
-      <div class="modal-header d-flex justify-content-center">
-        <h4>¿Seguro que desea dar como cobradas estas comisiones?</h4>
-      </div>
-
-      <!--Body-->
-      <div class="modal-body">
-
-        <i class="fa fa-warning fa-4x animated rotateIn text-yellow"></i>
-
-      </div>
-
-      <!--Footer-->
-      <div class="modal-footer flex-center">
-        <a href="" class="btn btn-default pull-left">No</a>
-        <a type="button" class="btn  btn-warning waves-effect" data-dismiss="modal">Si</a>
-      </div>
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
 
 
 <script>
@@ -147,14 +116,107 @@
   //Defino los totales de mis 2 columnas en 0
   var total_col = 0;
   //Recorro todos los tr ubicados en el tbody
-  $('#ejemplo tbody').find('tr').each(function (i, el) {
+  $('#tblData tbody').find('tr').each(function (i, el) {
              
         //Voy incrementando las variables segun la fila ( .eq(0) representa la fila 1 )     
         total_col += parseFloat($(this).find('td').eq(6).text());
                 
     });
     //Muestro el resultado en el th correspondiente a la columna
-    $('#ejemplo tfoot tr th').eq(1).text(total_col);
+    $('#tblData tfoot tr th').eq(1).text(total_col);
 
 };
+
+
+
+function cobrar(){  
+
+
+  Swal.fire({
+      title: '¿Esta seguro que desea dar por cobradas las comisiones del chofer?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+      var chofer= document.getElementById("chofer").value;
+
+        var url = "cobrarcomision.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"chofer": chofer}, 
+           success: function(data)             
+           {   
+           Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+             
+                        
+           }
+       });
+        
+        
+      }
+    })
+  
+        
+}
+
+    function imprimirDIV(contenido) {
+        var ficha = document.getElementById(contenido);
+        var ventanaImpresion = window.open(' ', 'popUp');
+        ventanaImpresion.document.write(ficha.innerHTML);
+        ventanaImpresion.document.close();
+        ventanaImpresion.print();
+        ventanaImpresion.close();
+    }
+
+
+function exportTableToExcel(tableID, filename){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    
+    // Specify file name
+    filename = filename?filename+'.xls':'excel_data.xls';
+    
+    // Create download link element
+    downloadLink = document.createElement("a");
+    
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+}
+
+
+
+
 </script>

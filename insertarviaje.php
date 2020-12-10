@@ -84,6 +84,6 @@ if ($precio) {
 		
 	} 
 
-		header("Location: index.php?menu=NuevaSolicitud");
+		header("Location: principal.php?menu=NuevaSolicitud");
 
 ?>

@@ -10,6 +10,6 @@ $cliente= $_POST['cliente'];
 	$consulta="INSERT INTO usuario(idusuario,contrasena,flagBaja,id_perfil,id_cliente)VALUES('".$usuario."',".$pass.",1,".$perfil.",".$cliente.");";
 	$resultado=db_query($consulta);
 
-	header("Location: index.php?menu=NuevoCliente");
+	header("Location: principal.php?menu=NuevoCliente");
 
 ?>

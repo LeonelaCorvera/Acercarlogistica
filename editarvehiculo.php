@@ -8,7 +8,11 @@ $marca= $_POST['marca'];
 $modelo = $_POST['modelo'];
 $anio = $_POST['anio'];
 $tipo = $_POST['tipo'];
-$seguro = ($_POST['seguro']=='Si') ? 1 : 0 ;
+$seguro = $_POST['seguro'];
+$vtv = $_POST['vtv'];
+$pagopatente = $_POST['pagopatente'];
+
+
 
 
 	$consulta="select * from vehiculo where idVehiculo=".$id.";";
@@ -39,8 +43,14 @@ $seguro = ($_POST['seguro']=='Si') ? 1 : 0 ;
 		} if ($fila['idTipoDeVehiculo']!=$tipo) {
 			$tex .= ($param>0) ? " ,idTipoDeVehiculo='".$tipo."'" : " idTipoDeVehiculo='".$tipo."'" ;
 			$param++;
-		} if ($fila['seguroAlDia']!=$seguro) {
-			$tex .= ($param>0) ? " ,seguroAlDia='".$seguro."'" : " seguroAlDia='".$seguro."'" ;
+		} if ($fila['seguro']!=$seguro) {
+			$tex .= ($param>0) ? " ,seguro='".$seguro."'" : " seguro='".$seguro."'" ;
+			$param++;
+		}if ($fila['vtv']!=$vtv) {
+			$tex .= ($param>0) ? " ,vtv='".$vtv."'" : " vtv='".$vtv."'" ;
+			$param++;
+		}if ($fila['pagopatente']!=$pagopatente) {
+			$tex .= ($param>0) ? " ,pagopatente='".$pagopatente."'" : " pagopatente='".$pagopatente."'" ;
 			$param++;
 		} if ($tex!="") {
 			$tex.=" where idVehiculo=".$id;
@@ -54,6 +64,6 @@ $seguro = ($_POST['seguro']=='Si') ? 1 : 0 ;
 	} 
 
 
-	header("Location: index.php?menu=ListadoVehiculos");
+	header("Location: principal.php?menu=ListadoVehiculos");
 
 ?>

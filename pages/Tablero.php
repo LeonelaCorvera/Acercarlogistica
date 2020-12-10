@@ -13,58 +13,40 @@
   </style>
 
 
+
     <section class="content-header">
 
-      <h1>
-        Tablero
-        <small>Disponibilidades</small>
-        <i class='fa  fa-exclamation-circle' id="helper" onClick="desplegar()"></i>
-      </h1>
-<div  id="desplegable" class="pop-ups">
- 
 
- 
+<?php
 
 
- <div class="box">
-    <div class="box-header with-border">
-       <i class='fa fa-remove' id="helper" onClick="ocultar()"></i>
-    </div>
+if(session_get('rol')!=3 and session_get('rol')!=null){
+  
+  echo "<h1>
+          Tablero
+          <small>Disponibilidades</small>
+          
+        </h1>";
 
-    <div class="box-body">
 
-        <p style="color:green;">Choferes en verde: </p><p> Son choferes que se encuentran disponibles para recibir viajes pendientes.</p>
+}else{
+  
+   echo "<h1>
+          Inicio
+          <small>Bienvenido</small>
+          
+        </h1>";
 
-        <p style="color:yellow;">Choferes en amarillo: </p><p> Son choferes que se encuentran con un viaje en curso.</p>
-
-        <p style="color:red;">Choferes en rojo: </p><p> Son choferes que no se encuentran disponibles, o ausentes.</p>
-
-        <button type='button' class='btn btn-warning btn-circle'>
-          <i class='fa fa-hand-paper-o'></i>
-        </button> Es una opcion solo disponible para los choferes que estan con un viaje en curso. Nos permite indicar que el chofer finalizo el viaje que tenia en curso, lo que implica que vuelve a estar disponible (en color verde).
-
-<br><br>
-
-        <button type='button' class='btn btn-danger btn-circle'>
-          <i class='fa fa-check'></i>
-        </button> Es una opcion solo disponible para los choferes ausentes. Nos permite activarlos, loq ue implica que pasan a estar activos (en color verde).
-
-<br><br>
-
-        <button type='button' class='btn btn-light' style='color:black';>
-          <span>12 viajes
-            <i class='fa fa-arrow-circle-right'></i>
-          </span>
-        </button> Este boton lo encontraremos en cada chofer. Nos permite desplagar el listado de viajes pendientes, para poder seleccionarlos y asignarselos al chofer al que corresponde el boton accionado.
-
-    </div>
-
-  </div>
+}
 
 
 
-</div>
-    </section>
+
+
+ ?>
+      
+
+</section>
 
     <!-- Main content -->
 <div>
@@ -75,7 +57,15 @@
 
 <?php
 
-   include('listartablero.php');
+
+if(session_get('rol')!=3 and session_get('rol')!=null){
+  
+include('listartablero.php');
+
+}
+
+
+
 
 
  ?>
@@ -161,8 +151,8 @@ var cho=0;
 
     function hola(numero) {
 
-        cho=numero;
-        $("#idchofer").val(numero);
+       cho=numero;
+      $("#idchofer").val(numero);
 
      
       };
@@ -219,13 +209,35 @@ var cho=0;
                  });
 
                 var user = document.getElementsByName("usuario");
-                alert(user);
+               
 
 
   }         
+
+  
   function activar(chofer){
 
     var url = "activar.php";
+                $.ajax({                                       
+                   url: url,                     
+                   data:{"chofer": chofer}, 
+                   method : 'post',
+                   dataType : 'json',
+                   success: function(data)             
+                   {
+                     location.reload();             
+                   },
+                   error: function(data)             
+                   {
+                     location.reload();            
+                   }
+                 });
+
+   }  
+
+    function desactivar(chofer){
+
+    var url = "desactivar.php";
                 $.ajax({                                       
                    url: url,                     
                    data:{"chofer": chofer}, 

@@ -10,6 +10,8 @@ include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min
 				fecha_ultima_disponibilidad = now()
 				WHERE idChofer = ".$chofer.";";
 
+	
+
 	$resultado=db_query($consulta);
 
 

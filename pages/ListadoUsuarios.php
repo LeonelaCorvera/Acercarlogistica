@@ -26,11 +26,7 @@
             <!-- /.box-header -->
             <div class="box-body">
 
-              <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
-                  </label>
-                </div>
+              
 
 
               <table id="example2" class="table table-bordered table-striped">

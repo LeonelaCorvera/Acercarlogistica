@@ -9,6 +9,6 @@ $des= $_POST['des'];
 	$consulta="INSERT INTO servicio(descripcion)VALUES('".$des."');";
 	$resultado=db_query($consulta);
 
-	header("Location: index.php?menu=ListadoServicios");
+	header("Location: principal.php?menu=ListadoServicios");
 
 ?>

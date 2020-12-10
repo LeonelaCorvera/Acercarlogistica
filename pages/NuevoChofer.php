@@ -55,6 +55,36 @@
                   </select>
                 </div>
               </div>
+
+
+
+            </div>
+
+
+            <br>           
+
+            <div class="row">
+              <div class="col-xs-12">
+                <h4>Venciemientos</h4>
+                <hr/> 
+              </div>
+            </div>
+
+
+
+            <div class="row">
+
+              <div class="col-xs-3">
+                  <label>Licencia:</label>
+                  <input type="date" class="form-control" name="licencia" required>
+              </div>
+
+              <div class="col-xs-3">
+                  <label>Cedula:</label>
+                  <input type="date" class="form-control" name="cedula" required>
+              </div>
+
+
             </div>
             <br>
                 

@@ -20,11 +20,6 @@
             <!-- /.box-header -->
             <div class="box-body">
 
-              <div class="col-xs-3">
-                 <label onclick="hola();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
-                  </label>
-                </div>
 
 
               <table id="example2" class="table table-bordered table-striped">
@@ -57,21 +52,7 @@
 
 
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>Id</th>
-                  <th>Razon social</th>
-                  <th>Contacto</th>
-                  <th>Tip.Doc.</th>
-                  <th>Documento</th>
-                  <th>Direccion</th>
-                  <th>Telefono</th>
-                  <th>Fecha de alta</th>
-                  <th>Lista de precio</th>
-                  <th>Estado</th>
-                  <th>Acciones</th>
-                </tr>
-                </tfoot>
+                
               </table>
             </div>
             
@@ -133,6 +114,52 @@ function sendId(id){
            }
        });
 }
+
+
+function deshabilitar(id){  
+
+
+  Swal.fire({
+      title: '¿Esta seguro que desea eliminar este cliente?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si eliminalo!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        var url = "deletecliente.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {   
+           Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+             
+                        
+           }
+       });
+        
+        
+      }
+    })
+  
+        
+}
+
 
 
 </script>

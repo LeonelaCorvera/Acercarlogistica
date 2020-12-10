@@ -29,14 +29,7 @@ $result = json_encode($resultado, true);
 
 foreach($resultado as $fila){
 
-  if ($fila['seguroAlDia']=="Si") {
-    $val1="Si";
-    $val2="No";
-  } else {
-    $val1="No";
-    $val2="Si";
-  }
-  
+
 
 
     echo  "<form action='editarvehiculo.php' method='post'>
@@ -61,7 +54,7 @@ foreach($resultado as $fila){
                   <label>Año:</label>
                   <input type='text' class='form-control' name='anio' value='"."$fila[anio]"."'>
                 </div>
-            </div'
+            </div>
 <br>
              <div class='row'>
               <div class='col-xs-3'>
@@ -88,21 +81,42 @@ foreach($resultado as $fila){
                   echo "</select>
                 </div>
               </div>
-              <div class='col-xs-2'>
-                <div class='form-group'>
-                  <label>Seguro al dia:</label>
-                  <select class='form-control' name='seguro'>
-                    <option>".$val1."</option>
-                    <option>".$val2."</option>
-                  </select>
-                </div>
+            </div>
+            <br>";
+
+            echo "<br>           
+
+            <div class='row'>
+              <div class='col-xs-12'>
+                <h4>Venciemientos</h4>
+                <hr/> 
               </div>
             </div>
-            <br>
+
+
+
+            <div class='row'>
+
+                <div class='col-xs-3'>
+                    <label>Seguro:</label>
+                    <input type='date' class='form-control' name='seguro' value='"."$fila[seguro]"."'>
+                </div>
+
+                <div class='col-xs-3'>
+                    <label>VTV:</label>
+                    <input type='date' class='form-control' name='vtv' value='"."$fila[vtv]"."'>
+                </div>
+
+                <div class='col-xs-3'>
+                    <label>Patente:</label>
+                    <input type='date' class='form-control' name='pagopatente' value='"."$fila[pagopatente]"."'>
+                </div>
+
+            </div>
                 
 
                <div class='box-footer'>
-                <button type='submit' class='btn btn-info pull-right'>Modificar</button>
+                  <button type='submit' class='btn btn-info pull-right'>Modificar</button>
               </div>
         </form>
        

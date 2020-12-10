@@ -18,7 +18,7 @@
               <div class="row">
                 <div class="col-xs-3">
                   <label>Nombre de usuario:</label>
-                  <input type="text" class="form-control" name="usuario">
+                  <input type="email" class="form-control" name="usuario">
                 </div>
                 <div class="col-xs-3">
                   <label>Contraseña:</label>
@@ -36,18 +36,9 @@
                   <label>Perfil:</label>
                   <select class="form-control" name="perfil">
                     <option value='0'>Seleccionar</option>
-                      <?php
-
-                        include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min.php';
-
-                          $consulta="SELECT * FROM perfil;";
-                          $resultado=db_query($consulta);
-
-                          foreach($resultado as $fila){
-
-                            echo "<option value='".$fila[idPerfil]."'>".$fila[descripcion]."</option>";
-                          }
-                      ?>
+                    <option value='1'>Administrador</option>
+                    <option value='2'>Recepcionista</option>
+                    <option value='3'>Cliente</option>
                   </select>
                 </div>
               </div>

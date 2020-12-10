@@ -61,11 +61,6 @@
             <!-- /.box-header -->
             <div class="box-body">
 
-              <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
-                  </label>
-                </div>
 
 
               <table id="example2" class="table table-bordered table-striped">
@@ -171,7 +166,7 @@
                     <option value='0'>Seleccionar</option>
                       <?php
 
-                          $consulta="SELECT * FROM acercarlogistca.listadeprecios;";
+                          $consulta="SELECT * FROM listadeprecios;";
                           $resultado=db_query($consulta);
 
                           foreach($resultado as $fila){
@@ -201,3 +196,67 @@
     <!--/.Content-->
   </div>
 </div>
+
+<script type="text/javascript">
+
+  
+function sendId(id){  
+  
+        var url = "pages/EditServicio.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+function deshabilitar(id){  
+
+
+  Swal.fire({
+      title: '¿Esta seguro que desea eliminar esta lista de precios?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si eliminala!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        var url = "deletelistaprecio.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {   
+           Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+             
+                        
+           }
+       });
+        
+        
+      }
+    })
+  
+        
+}
+
+
+</script>

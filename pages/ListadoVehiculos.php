@@ -1,6 +1,5 @@
 <div id="resp">
 
-
 <section class="content-header">
       <h1>
         Vehiculos
@@ -9,10 +8,8 @@
 </section>
 
 <section class="content">
-
       
       <div class="row">
-
 
 
         <div class="col-xs-12">
@@ -28,11 +25,7 @@
             <!-- /.box-header -->
             <div class="box-body">
 
-              <div class="col-xs-3">
-                 <label onclick="document.getElementById('c1').submit();">
-                      <input  name="c1" type="checkbox" checked data-toggle="toggle" data-on="Activos" data-off="Inactivos" data-onstyle="success" data-offstyle="danger" >
-                  </label>
-                </div>
+              
 
               <div style="overflow-y: scroll;height:400px; width: 99%">
               <table id="example" class="table table-bordered table-striped" >
@@ -44,22 +37,18 @@
                   <th>Marca</th>
                   <th>Modelo</th>
                   <th>Año</th>
-                  <th>Seguro al dia</th>
                   <th>Tipo</th>
+                  <th>Estados</th>
                   <th>Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
                   
-
                   <?php
-
 
                     include('listarvehiculos.php');
 
-
                   ?>
-
 
                 </tbody>
                 <tfoot>
@@ -69,8 +58,8 @@
                   <th>Marca</th>
                   <th>Modelo</th>
                   <th>Año</th>
-                  <th>Seguro al dia</th>
                   <th>Tipo</th>
+                  <th>Estados</th>
                   <th>Acciones</th>
                 </tr>
                 </tfoot>
@@ -80,20 +69,12 @@
             
         </div>
 
-
-        
-
           <!-- /.box -->
         </div>
         <!-- /.col -->
-      </div>
-
-
-      
+      </div>    
 
 </section>
-
-
 
 <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
@@ -137,20 +118,51 @@ function sendId(id){
        });
 }
 
-function deshabilitar(){  
-  
-        var url = "pages/EditVehiculo.php";
+function deshabilitar(id){  
+
+
+  Swal.fire({
+      title: 'Esta seguro que desea eliminar este vehiculo?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si eliminalo!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        var url = "deletevehiculo.php";
         $.ajax({                        
            type: "POST",                 
            url: url,                     
            data:{"id": id}, 
            success: function(data)             
-           {
-             alert(data);               
+           {   
+           Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              
+            }
+          })
+             
+                        
            }
        });
+        
+        
+      }
+    })
+  
+        
 }
-</script>
 
+
+</script>
 
 </div>

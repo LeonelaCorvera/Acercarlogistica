@@ -1,3 +1,4 @@
+<div id="resp">
 <section class="content">
 
       
@@ -26,9 +27,9 @@
                 <tr>
                   <th>Id Chofer</th>
                   <th>Nombre</th>
-                  <th>V.seguro</th>
+                  <th>V.Licencia</th>
                   <th>Dias venc.</th>
-                  <th>Licencia</th>
+                  <th>V.Cedula</th>
                   <th>Dias venc.</th>
                   <th>Acciones</th>
                 </tr>
@@ -36,18 +37,11 @@
                 <tbody>
                   
 
-                  <tr>
-                  <td>1</td>
-                  <td>Leonela Corvera</td>
-                  <td>2020-05-18</td>
-                  <td style="color: red;">-1</td>
-                  <td>2020-05-05</td>
-                  <td style="color: red;">-14</td>
-                  <td>
-                    <button type='button' title='Editar vencimiento' class='btn btn-warning' data-toggle='modal' data-target='#modalConfirmRefresh'><i class='fa fa-edit'></i></button>
-                    <button type='button' title='Deshabilitar chofer' class='btn btn-danger' data-toggle='modal' data-target='#modalConfirmDelete'><i class='fa fa-trash'></i></button>
-                  </td>
-                </tr>
+                  <?php
+
+                    include('listarvencimientochofer.php');
+
+                  ?>
 
 
                 </tbody>
@@ -55,9 +49,9 @@
                 <tr>
                   <th>Id Chofer</th>
                   <th>Nombre</th>
-                  <th>V.seguro</th>
+                  <th>V.Licencia</th>
                   <th>Dias venc.</th>
-                  <th>Licencia</th>
+                  <th>V.Cedula</th>
                   <th>Dias venc.</th>
                   <th>Acciones</th>
                 </tr>
@@ -135,3 +129,69 @@
     <!--/.Content-->
   </div>
 </div>
+
+
+</div>
+<script>
+function sendId(id){  
+  
+        var url = "pages/EditChofer.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {
+             $('#resp').html(data);               
+           }
+       });
+}
+
+
+function deshabilitar(id){  
+
+
+  Swal.fire({
+      title: '¿Esta seguro que desea eliminar este chofer?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si eliminalo!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        var url = "deletechofer.php";
+        $.ajax({                        
+           type: "POST",                 
+           url: url,                     
+           data:{"id": id}, 
+           success: function(data)             
+           {   
+           Swal.fire({
+            title: 'Exito!',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+               location.reload();
+            }
+          })
+             
+                        
+           }
+       });
+        
+        
+      }
+    })
+  
+        
+}
+
+
+
+</script>

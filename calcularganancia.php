@@ -5,7 +5,7 @@ include 'C:\xampp\htdocs\AdminLTE\Acercarlogistica-master\funciones\database_min
 $desde = (isset($_POST['desde'])) ? $_POST['desde'] : "0000-00-00" ;
 $hasta = (isset($_POST['hasta'])) ? $_POST['hasta'] : "0000-00-00" ;
 
-	$consulta="SELECT * FROM acercarlogistca.viaje where fecha between '".$desde."' and '".$hasta."';";
+	$consulta="SELECT * FROM viaje where fecha between '".$desde."' and '".$hasta."';";
 	$resultado=db_query($consulta);
 
 	$array=[];

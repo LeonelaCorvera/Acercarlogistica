@@ -27,8 +27,8 @@
             </div>
 <br><br>
                <div class="box-footer" >
-                   <button type="button" class="btn btn-success pull-right">Imprimir</button>
-                   <button type="button" class="btn btn-warning pull-right" id="submitExport">Exportar</button>
+                   <button type="button" class="btn btn-success pull-right" onclick="javascript:window.imprimirDIV('ID_DIV');">Imprimir</button>
+                   <button type="button" class="btn btn-warning pull-right" id="submitExport" onclick="exportTableToExcel('export_to_excel', 'Ganancias')">Exportar</button>
                    <button type="button" class="btn btn-primary pull-right" onclick="consulta()">Buscar</button>
                 
               </div>
@@ -43,7 +43,7 @@
 
 
 
-<section class='content'>
+<section class='content' id="ID_DIV">
 
   <form action="process.php" method="post" target="_blank" id="formExport">
     <input type="hidden" id="data_to_send" name="data_to_send" />
@@ -62,7 +62,7 @@
 
      <div class='box-body'>
 
-      <table id="export_to_excel" class='table table-bordered table-striped'>
+      <table id="export_to_excel" class='table table-bordered table-striped' border="1">
                 <thead>
 
                 <tr>
@@ -83,7 +83,7 @@
                 <tfoot>
                 <tr>
                   <th colspan='7'>Total</th>
-                  <th id="total">2100</th>
+                  <th id="total">0</th>
                 </tr>
                 </tfoot>
               </table>
@@ -135,14 +135,47 @@ function calcularTotal(){
     //Muestro el resultado en el th correspondiente a la columna
     $('#export_to_excel tfoot tr th').eq(1).text(total_col);
 
-};
+}
 
-document.getElementById('submitExport').addEventListener('click', function(e) {
-    e.preventDefault();
-    let export_to_excel = document.getElementById('export_to_excel');
-    let data_to_send = document.getElementById('data_to_send');
-    data_to_send.value = export_to_excel.outerHTML;
-    document.getElementById('formExport').submit();
-});
+function exportTableToExcel(tableID, filename){
+    var downloadLink;
+    var dataType = 'application/vnd.ms-excel';
+    var tableSelect = document.getElementById(tableID);
+    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+    
+    // Specify file name
+    filename = filename?filename+'.xls':'excel_data.xls';
+    
+    // Create download link element
+    downloadLink = document.createElement("a");
+    
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['ufeff', tableHTML], {
+            type: dataType
+        });
+        navigator.msSaveOrOpenBlob( blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+    
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+}
+
+ function imprimirDIV(contenido) {
+        var ficha = document.getElementById(contenido);
+        var ventanaImpresion = window.open(' ', 'popUp');
+        ventanaImpresion.document.write(ficha.innerHTML);
+        ventanaImpresion.document.close();
+        ventanaImpresion.print();
+        ventanaImpresion.close();
+    }
+
 
 </script>

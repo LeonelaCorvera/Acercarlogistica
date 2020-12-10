@@ -41,6 +41,6 @@ $perfil= $_POST['perfil'];
 	} 
 
 
-	header("Location: index.php?menu=ListadoUsuario");
+	header("Location: principal.php?menu=ListadoUsuario");
 
 ?>

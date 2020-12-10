@@ -1,8 +1,18 @@
+<?php
+
+ 
+  $rol=session_get('rol');
+  
+
+?>
+
+
+
 <div class="wrapper">
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="principal.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>L</span>
       <!-- logo for regular state and mobile devices -->
@@ -27,22 +37,35 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               
-              <span class="hidden-xs">Leonela Corvera</span>
+              <span class="hidden-xs">Usuario</span>
+            
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="dist/img/user.png">
 
               
               </li>
               <!-- Menu Body -->
-              
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <a href="principal.php?menu=CambiarContrasenia">Cambiar contraseña</a>
+                  </div>
+                
+                </div>
+                <!-- /.row -->
+              </li>
               <!-- Menu Footer-->
               <li class="user-footer">
                 
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+
+                    <form action="cerrarSesion.php" method="post">
+                      <button type="submit" class='btn btn-default'>Cerrar sesion</buttform>
+                    </form>
+
                 </div>
               </li>
             </ul>
@@ -55,6 +78,8 @@
       </div>
     </nav>
   </header>
+
+
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -69,9 +94,10 @@
         <li class="header">Menu</li>
         <li class="active treeview">
           
-          <li class="active"><a href="index.php?menu=tablero"><i class="fa fa-home"></i> Inicio</a></li>
+          <li class="active"><a href="principal.php?menu=tablero"><i class="fa fa-home"></i> Inicio</a></li>
 
         </li>
+        <!--
         <li class="treeview">
           <a href="#">
             <i class="fa fa-map text-yellow"></i>
@@ -84,7 +110,17 @@
             <li><a href="index.php?menu=Zonas"><i class="fa fa-list"></i> Zonificar</a></li>
           </ul>
         </li>
-        <li class="treeview">
+        -->
+
+
+<?php
+
+if($rol==1){
+  
+
+
+
+    echo '    <li class="treeview">
           <a href="#">
             <i class="fa fa-thumbs-up text-blue"></i>
             <span>Servicios</span>
@@ -93,8 +129,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListadoServicios"><i class="fa fa-list"></i> Listado</a></li>
-            <li><a href="index.php?menu=NuevoServicio"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=ListadoServicios"><i class="fa fa-list"></i> Listado</a></li>
+            <li><a href="principal.php?menu=NuevoServicio"><i class="fa fa-plus"></i> Nuevo</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -106,11 +142,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListaPrecios"><i class="fa fa-list"></i> Lista de precio</a></li>
-            <li><a href="index.php?menu=Precio"><i class="fa fa-dollar"></i> Precios</a></li>
+            <li><a href="principal.php?menu=ListaPrecios"><i class="fa fa-list"></i> Lista de precio</a></li>
+            <li><a href="principal.php?menu=Precio"><i class="fa fa-dollar"></i> Precios</a></li>
+             <!--
             <li><a href="index.php?menu=AumentoPrecio"><i class="fa fa-line-chart"></i> Aumento</a></li>
             <li><a href="index.php?menu=Backup"><i class="fa fa-rotate-left"></i> Backup</a></li>
             <li><a href="index.php?menu=Adicional"><i class="fa  fa-plus-square-o"></i> Adicionales</a></li>
+            -->
           </ul>
         </li>
         <li class="treeview">
@@ -122,8 +160,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListadoVehiculos"><i class="fa fa-list"></i> Listado</a></li>
-            <li><a href="index.php?menu=NuevoVehiculo"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=ListadoVehiculos"><i class="fa fa-list"></i> Listado</a></li>
+            <li><a href="principal.php?menu=NuevoVehiculo"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=VencimientoVehiculo"><i class="fa fa-file"></i> Vencimientos</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -135,9 +174,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListadoChoferes"><i class="fa fa-list"></i> Listado</a></li>
-            <li><a href="index.php?menu=NuevoChofer"><i class="fa fa-plus"></i> Nuevo</a></li>
-            <li><a href="index.php?menu=Vencimientos"><i class="fa fa-file"></i> Vencimientos</a></li>
+            <li><a href="principal.php?menu=ListadoChoferes"><i class="fa fa-list"></i> Listado</a></li>
+            <li><a href="principal.php?menu=NuevoChofer"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=Vencimientos"><i class="fa fa-file"></i> Vencimientos</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -149,8 +188,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListadoClientes"><i class="fa fa-list"></i> Listado clientes</a></li>
-            <li><a href="index.php?menu=NuevoCliente"><i class="fa fa-user-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=ListadoClientes"><i class="fa fa-list"></i> Listado clientes</a></li>
+            <li><a href="principal.php?menu=NuevoCliente"><i class="fa fa-user-plus"></i> Nuevo</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -162,7 +201,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=Ganancias"><i class="fa fa-file"></i> Calcular ganancias</a></li>
+            <li><a href="principal.php?menu=Ganancias"><i class="fa fa-file"></i> Calcular ganancias</a></li>
+            <li><a href="principal.php?menu=Reportes"><i class="fa fa-file"></i> Reportes</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -174,8 +214,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=Comisiones"><i class="fa fa-file"></i> Calcular comisiones</a></li>
-            <li><a href="index.php?menu=ReporteComisiones"><i class="fa fa-file"></i> Reporte de comisiones</a></li>
+            <li><a href="principal.php?menu=Comisiones"><i class="fa fa-file"></i> Calcular comisiones</a></li>
+            <!-- <li><a href="index.php?menu=ReporteComisiones"><i class="fa fa-file"></i> Reporte de comisiones</a></li> -->
           </ul>
         </li>
         <li class="treeview">
@@ -187,26 +227,28 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
-            <li><a href="index.php?menu=Mapa"><i class="fa fa-map"></i> Mapa</a></li>
-            <li><a href="index.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
-            <li><a href="index.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
+           <!-- <li><a href="principal.php?menu=Mapa"><i class="fa fa-map"></i> Mapa</a></li>-->
+            <li><a href="principal.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
+            <li><a href="principal.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-user text-yellow"></i>
+
+
             <span>Usuarios</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=ListadoUsuarios"><i class="fa fa-list"></i> Lista de usuarios</a></li>
-            <li><a href="index.php?menu=NuevoUsuario"><i class="fa fa-user-plus"></i> Nuevo</a></li>
+            <li><a href="principal.php?menu=ListadoUsuarios"><i class="fa fa-list"></i> Lista de usuarios</a></li>
+            <li><a href="principal.php?menu=NuevoUsuario"><i class="fa fa-user-plus"></i> Nuevo</a></li>
           </ul>
         </li>
-        <li class="treeview">
+       <!--     <li class="treeview">
           <a href="#">
             <i class="fa fa-user text-blue"></i>
             <span>Perfil</span>
@@ -215,18 +257,137 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php?menu=Perfil"><i class="fa fa-list"></i>Perfiles</a></li>
+            <li><a href="principal.php?menu=Perfil"><i class="fa fa-list"></i>Perfiles</a></li>
+          </ul>
+        </li>-->
+
+        
+     ';
+}
+
+if($rol==2){
+  
+
+
+
+    echo '  <li class="treeview">
+          <a href="#">
+            <i class="fa fa-male text-teal"></i>
+            <span>Chofer</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=ListadoChoferes"><i class="fa fa-list"></i> Listado</a></li>
+   
+            <li><a href="principal.php?menu=Vencimientos"><i class="fa fa-file"></i> Vencimientos</a></li>
           </ul>
         </li>
-   
-   <!--------------------------->
-        
-      </ul>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users text-red"></i>
+            <span>Cliente</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=ListadoClientes"><i class="fa fa-list"></i> Listado clientes</a></li>
+            <li><a href="principal.php?menu=NuevoCliente"><i class="fa fa-user-plus"></i> Nuevo</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-money text-lime"></i>
+            <span>Comisiones</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=Comisiones"><i class="fa fa-file"></i> Calcular comisiones</a></li>
+            <!-- <li><a href="index.php?menu=ReporteComisiones"><i class="fa fa-file"></i> Reporte de comisiones</a></li> -->
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-suitcase text-purple"></i>
+            <span>Solicitudes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
+           <!-- <li><a href="principal.php?menu=Mapa"><i class="fa fa-map"></i> Mapa</a></li>-->
+            <li><a href="principal.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
+            <li><a href="principal.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-user text-yellow"></i>
+
+
+            <span>Usuarios</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=ListadoUsuarios"><i class="fa fa-list"></i> Lista de usuarios</a></li>
+            <li><a href="principal.php?menu=NuevoUsuario"><i class="fa fa-user-plus"></i> Nuevo</a></li>
+          </ul>
+        </li>
+       <!--     <li class="treeview">
+          <a href="#">
+            <i class="fa fa-user text-blue"></i>
+            <span>Perfil</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=Perfil"><i class="fa fa-list"></i>Perfiles</a></li>
+          </ul>
+        </li>-->';
+}
+
+if($rol==3){
+  
+
+
+
+    echo '  
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-suitcase text-purple"></i>
+            <span>Solicitudes</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="principal.php?menu=AsignarSolicitud"><i class="fa fa-hand-o-right"></i> Asignar solicitudes</a></li>
+
+            <li><a href="principal.php?menu=ListadoSolicitudes"><i class="fa fa-list"></i> Listado de solicitudes</a></li>
+            <li><a href="principal.php?menu=NuevaSolicitud"><i class="fa fa-plus"></i> Nuevo</a></li>
+          </ul>
+        </li>';
+}
+
+
+
+?>      
+
+ </ul>
     </section>
-    <!-- /.sidebar ------------------------------------------->
+
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+
  
   <!-- /.content-wrapper -->
   

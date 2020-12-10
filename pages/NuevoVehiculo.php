@@ -35,7 +35,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker" name="anio">
+                  <input type="number" class="form-control pull-right"  name="anio">
                 </div>
                 <!-- /.input group -->
               </div>
@@ -62,16 +62,41 @@
                   </select>
                 </div>
               </div>
-              <div class="col-xs-2">
-                <div class="form-group">
-                  <label>Seguro al dia:</label>
-                  <select class="form-control" name="seguro">
-                    <option value='1'>Si</option>
-                    <option value='0'>No</option>
-                  </select>
-                </div>
+              
+            </div>
+
+
+            <br>           
+
+            <div class="row">
+              <div class="col-xs-12">
+                <h4>Venciemientos</h4>
+                <hr/> 
               </div>
             </div>
+
+
+
+            <div class="row">
+
+              <div class="col-xs-3">
+                  <label>Seguro:</label>
+                  <input type="date" class="form-control" name="pagoseguro" required>
+              </div>
+
+              <div class="col-xs-3">
+                  <label>VTV:</label>
+                  <input type="date" class="form-control" name="vtv" required>
+              </div>
+
+              <div class="col-xs-3">
+                  <label>Patente:</label>
+                  <input type="date" class="form-control" name="pagopatente" required>
+              </div>
+
+            </div>
+
+
             <br>
                 
 
